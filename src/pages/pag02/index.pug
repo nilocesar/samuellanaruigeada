@@ -1,0 +1,702 @@
+extends ../../templates/page/page-base.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    body(prev-hide, next-hide)
+        .onePage.color-bg-02
+            section.sec01.color-bg-08.shadowDonw
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt10 prop-pb6'
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Os Segredos Ocultos do Fundo do Mar',
+                                        class: 'color-05 prop-m0 prop-txt-up prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Explorando as Profundezas Inexploradas',
+                                        class: 'color-white prop-mt1 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A exploração do fundo do mar, impulsionada por tecnologias avançadas como submersíveis e sondas, tem revelado maravilhas como fontes hidrotermais, montanhas submarinas e espécies inéditas. Cada descoberta aproxima-nos mais de compreender a complexidade dos ecossistemas marinhos e a importância de os preservar para as gerações futuras.',
+                                        class: 'color-white prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Clique nos itens abaixo e acompanhe o que sabemos sobre o fundo do mar.',
+                                        class: 'color-white prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'list',
+                                    class: 'prop-mt2 list-type-div5',
+                                    resource: [
+                                        {
+                                            type: 'button',
+                                            resource: {
+                                                alt: '',
+                                                activeModal: '#modal01',
+                                                classContainer: '',
+                                                class: 'btn-noborder-h100 btn btn1 prop-w-porc100 up delay1',
+                                                attr:{
+                                                    item: '',
+                                                    onClick: ''
+                                                },
+                                                content: [
+                                                    {
+                                                        type: 'card',
+                                                        resource: {
+                                                            class: 'card-simple util-border-c05 util-space-between prop-p1 util-border-r10',
+                                                            content: [
+                                                                {
+                                                                    type: 'image',
+                                                                    resource: {
+                                                                        classContainer: '',
+                                                                        src: 'num1.png',
+                                                                        class: 'pulse',
+                                                                        alt: ''
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'text',
+                                                                    resource: {
+                                                                        content: 'Ecossistemas',
+                                                                        class: 'prop-mt2 prop-mb4 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1'
+                                                                    }
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: 'button',
+                                            resource: {
+                                                alt: '',
+                                                activeModal: '#modal02',
+                                                classContainer: '',
+                                                class: 'btn-noborder-h100 btn btn2 prop-mt2 prop-tablet-mt0 prop-w-porc100 up delay2 block-2',
+                                                attr:{
+                                                    item: '',
+                                                    onClick: ''
+                                                },
+                                                content: [
+                                                    {
+                                                        type: 'card',
+                                                        resource: {
+                                                            class: 'card-simple util-border-c05 util-space-between prop-p1 util-border-r10',
+                                                            content: [
+                                                                {
+                                                                    type: 'text',
+                                                                    resource: {
+                                                                        content: 'Biodiversidade',
+                                                                        class: 'prop-mt4 prop-mb2 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'image',
+                                                                    resource: {
+                                                                        classContainer: '',
+                                                                        src: 'num2.png',
+                                                                        class: 'pulse',
+                                                                        alt: ''
+                                                                    }
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: 'button',
+                                            resource: {
+                                                alt: '',
+                                                activeModal: '#modal03',
+                                                classContainer: '',
+                                                class: 'btn-noborder-h100 btn btn3 prop-w-porc100 up delay3 block-2',
+                                                attr:{
+                                                    item: '',
+                                                    onClick: ''
+                                                },
+                                                content: [
+                                                    {
+                                                        type: 'card',
+                                                        resource: {
+                                                            class: 'card-simple util-border-c05 util-space-between prop-p1 util-border-r10',
+                                                            content: [
+                                                                {
+                                                                    type: 'image',
+                                                                    resource: {
+                                                                        classContainer: '',
+                                                                        src: 'num3.png',
+                                                                        class: 'pulse',
+                                                                        alt: ''
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'text',
+                                                                    resource: {
+                                                                        content: 'Geologia',
+                                                                        class: 'prop-mt2 prop-mb4 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1'
+                                                                    }
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: 'button',
+                                            resource: {
+                                                alt: '',
+                                                activeModal: '#modal04',
+                                                classContainer: '',
+                                                class: 'btn-noborder-h100 btn btn4 prop-mt2 prop-tablet-mt0 prop-w-porc100 up delay4 block-2',
+                                                attr:{
+                                                    item: '',
+                                                    onClick: ''
+                                                },
+                                                content: [
+                                                    {
+                                                        type: 'card',
+                                                        resource: {
+                                                            class: 'card-simple util-border-c05 util-space-between prop-p1 util-border-r10',
+                                                            content: [
+                                                                {
+                                                                    type: 'text',
+                                                                    resource: {
+                                                                        content: 'Descobertas',
+                                                                        class: 'prop-mt4 prop-mb2 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1 util-size-1'
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'image',
+                                                                    resource: {
+                                                                        classContainer: '',
+                                                                        src: 'num4.png',
+                                                                        class: 'pulse',
+                                                                        alt: ''
+                                                                    }
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: 'button',
+                                            resource: {
+                                                alt: '',
+                                                activeModal: '#modal05',
+                                                classContainer: '',
+                                                class: 'btn-noborder-h100 btn btn5 prop-w-porc100 up delay5 block-2',
+                                                attr:{
+                                                    item: '',
+                                                    onClick: ''
+                                                },
+                                                content: [
+                                                    {
+                                                        type: 'card',
+                                                        resource: {
+                                                            class: 'card-simple util-border-c05 util-space-between prop-p1 util-border-r10',
+                                                            content: [
+                                                                {
+                                                                    type: 'image',
+                                                                    resource: {
+                                                                        classContainer: '',
+                                                                        src: 'num5.png',
+                                                                        class: 'pulse',
+                                                                        alt: ''
+                                                                    }
+                                                                },
+                                                                {
+                                                                    type: 'text',
+                                                                    resource: {
+                                                                        content: 'Impacto',
+                                                                        class: 'prop-mt2 prop-mb4 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1'
+                                                                    }
+                                                                },
+                                                            ]
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                    ]
+                })
+                +modal('modal01', 'modal modal-comum modal-comum06', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'num1b.png',
+                                            class: 'prop-h6 object-position',
+                                            alt: '1 de 5.'
+                                        }
+                                    },
+                                    {
+                                        type: 'subtitle',
+                                        resource: {
+                                            content: 'Ecossistemas das Fontes Hidrotermais',
+                                            class: 'color-01 prop-txt-up prop-m0 prop-txt-up'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Explorar as comunidades biológicas únicas encontradas nas fontes hidrotermais, incluindo organismos que dependem da quimiossíntese, e a importância dessas áreas para a ciência.',
+                                            class: 'color-01 prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                        ]
+                    })
+                +modal('modal02', 'modal modal-comum modal-comum06', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'num2b.png',
+                                            class: 'prop-h6 object-position',
+                                            alt: '2 de 5.'
+                                        }
+                                    },
+                                    {
+                                        type: 'subtitle',
+                                        resource: {
+                                            content: 'A Biodiversidade Marinha e Seus Desafios',
+                                            class: 'color-01 prop-txt-up prop-m0 prop-txt-up'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Investigar a rica biodiversidade dos oceanos, a descoberta de novas espécies e os desafios que ameaçam a vida marinha, como a sobrepesca, a destruição de habitats e as espécies invasoras.',
+                                            class: 'color-01 prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                        ]
+                    })
+                +modal('modal03', 'modal modal-comum modal-comum06', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'num3b.png',
+                                            class: 'prop-h6 object-position',
+                                            alt: '3 de 5.'
+                                        }
+                                    },
+                                    {
+                                        type: 'subtitle',
+                                        resource: {
+                                            content: 'Geologia',
+                                            class: 'color-01 prop-txt-up prop-m0 prop-txt-up'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Analisar as características geológicas do fundo do mar, como as dorsais meso-oceânicas, fossas oceânicas, montes submarinos e planícies abissais, e o seu papel na tectónica de placas.',
+                                            class: 'color-01 prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                        ]
+                    })
+                +modal('modal04', 'modal modal-comum modal-comum06', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'num4b.png',
+                                            class: 'prop-h6 object-position',
+                                            alt: '4 de 5.'
+                                        }
+                                    },
+                                    {
+                                        type: 'subtitle',
+                                        resource: {
+                                            content: 'Descobertas Científicas Recentes',
+                                            class: 'color-01 prop-txt-up prop-m0 prop-txt-up'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Examinar as descobertas mais recentes sobre a vida e os processos no fundo do mar, incluindo novas espécies, formas de vida extremófilas e os impactos das mudanças climáticas em ambientes profundos.',
+                                            class: 'color-01 prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                        ]
+                    })
+                +modal('modal05', 'modal modal-comum modal-comum06', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'num5b.png',
+                                            class: 'prop-h6 object-position',
+                                            alt: '5 de 5.'
+                                        }
+                                    },
+                                    {
+                                        type: 'subtitle',
+                                        resource: {
+                                            content: 'Impacto Humano nas Profundezas Oceânicas',
+                                            class: 'color-01 prop-txt-up prop-m0 prop-txt-up'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Investigar os efeitos das atividades humanas no fundo do mar, como a mineração de profundidade, a poluição por plásticos e produtos químicos, e as implicações dessas ações para os ecossistemas profundos.',
+                                            class: 'color-01 prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                        ]
+                    })
+
+            section.sec02
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6 prop-tablet-pb0'
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Nas profundezas oceânicas,',
+                                        class: 'color-01 prop-m0'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Encontramos desde microrganismos que prosperam em fontes hidrotermais, utilizando quimiossíntese para obter energia, até gigantes como o polvo Dumbo e a lula colossal.',
+                                        class: 'color-white prop-mt1'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Além disso, os ecossistemas bentónicos, que incluem planícies abissais, montes submarinos e cânions oceânicos, são repletos de vida surpreendente, como corais de águas profundas, esponjas e uma variedade de peixes e invertebrados.',
+                                        class: 'color-white prop-mt1'
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6'
+                                },
+                                {
+                                    type: 'background',
+                                    resource: {
+                                        src: 'bg03.png',
+                                        class: '',
+                                        alt: ''
+                                    }
+                                },
+                                {
+                                    type: 'image',
+                                    resource: {
+                                        classContainer: '',
+                                        src: 'img21.png',
+                                        class: '',
+                                        alt: 'Recife de coral branqueado.'
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                })
+
+            section.sec03.color-bg-08
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6'
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Conheça alguns animais do alto mar.',
+                                        class: 'color-white prop-m0 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'list',
+                                    class: 'prop-mt3 list-type-div3',
+                                    resource: [
+                                        {
+                                            type: 'card',
+                                            resource: {
+                                                class: 'util-border-r2 color-bg-05',
+                                                content: [
+                                                    {
+                                                        type: 'image',
+                                                        resource: {
+                                                            classContainer: '',
+                                                            src: 'img11.png',
+                                                            class: 'prop-h12',
+                                                            alt: ''
+                                                        }
+                                                    },
+                                                    {
+                                                        type: 'text',
+                                                        resource: {
+                                                            content: '<b>Lula Colossal</b>',
+                                                            class: 'prop-m0 prop-mt1 prop-txt-center color-01'
+                                                        }
+                                                    },
+                                                    {
+                                                        type: 'text',
+                                                        resource: {
+                                                            content: 'A lula colossal, uma das maiores espécies de lulas, pode alcançar até 14 metros de comprimento. Habita as águas profundas do Oceano Antártico, tem grandes olhos adaptados à escuridão e ganchos giratórios nos tentáculos para capturar presas.',
+                                                            class: 'prop-mt1 prop-txt-center color-01'
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: 'card',
+                                            resource: {
+                                                class: 'util-border-r2 color-bg-05',
+                                                content: [
+                                                    {
+                                                        type: 'image',
+                                                        resource: {
+                                                            classContainer: '',
+                                                            src: 'img12.png',
+                                                            class: 'prop-h12',
+                                                            alt: ''
+                                                        }
+                                                    },
+                                                    {
+                                                        type: 'text',
+                                                        resource: {
+                                                            content: '<b>Peixe-Lanterna</b>',
+                                                            class: 'prop-m0 prop-mt1 prop-txt-center color-01'
+                                                        }
+                                                    },
+                                                    {
+                                                        type: 'text',
+                                                        resource: {
+                                                            content: 'Os peixes-lanterna são pequenos peixes bioluminescentes que habitam as profundezas oceânicas. Eles têm órgãos produtores de luz ao longo do corpo, usados para camuflagem e comunicação.',
+                                                            class: 'prop-mt1 prop-txt-center color-01'
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            type: 'card',
+                                            resource: {
+                                                class: 'util-border-r2 color-bg-05',
+                                                content: [
+                                                    {
+                                                        type: 'image',
+                                                        resource: {
+                                                            classContainer: '',
+                                                            src: 'img13.png',
+                                                            class: 'prop-h12',
+                                                            alt: ''
+                                                        }
+                                                    },
+                                                    {
+                                                        type: 'text',
+                                                        resource: {
+                                                            content: '<b>Enguia-Pelicano</b>',
+                                                            class: 'prop-m0 prop-mt1 prop-txt-center color-01'
+                                                        }
+                                                    },
+                                                    {
+                                                        type: 'text',
+                                                        resource: {
+                                                            content: 'A enguia-pelicano, também conhecida como enguia-boca-de-pelicano, é encontrada em águas profundas e é reconhecida pela sua enorme boca e barriga distensível, que lhe permitem capturar e engolir presas grandes.',
+                                                            class: 'prop-mt1 prop-txt-center color-01'
+                                                        }
+                                                    },
+                                                ]
+                                            }
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                    ]
+                })
+
+            section.sec04.color-bg-07
+                +template-wildcard({
+                    bg: '',
+                    class: 'up',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6 prop-tablet-pb3'
+                                },
+                                {
+                                    type: 'background',
+                                    resource: {
+                                        src: 'bg03.png',
+                                        class: '',
+                                        alt: ''
+                                    }
+                                },
+                                {
+                                    type: 'image',
+                                    resource: {
+                                        classContainer: '',
+                                        src: 'img09.png',
+                                        class: '',
+                                        alt: 'Fundo oceânico com corais e luz.'
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6 prop-tablet-pt0'
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A descoberta contínua de novas espécies e habitats demonstra a complexidade e a importância da conservação desses ecossistemas únicos, que desempenham um papel crucial na saúde dos oceanos e na regulação do clima global.',
+                                        class: 'color-white prop-mt1'
+                                    }
+                                },
+
+                                {
+                                    type: 'button',
+                                    resource: {
+                                        alt: '',
+                                        classContainer: '',
+                                        class: 'button-type-next-page05 zoomIn prop-mt2',
+                                        attr:{
+                                            item: '',
+                                        },
+                                        content: [
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Clique para seguir para o próximo tópico.',
+                                                    class: 'color-05'
+                                                }
+                                            },
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'arrow05.png',
+                                                    class: 'pulse',
+                                                    alt: ''
+                                                }
+                                            },
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                    ]
+                })
+
+block scripts
+  script(src="script.js")

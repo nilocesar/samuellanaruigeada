@@ -1,0 +1,65 @@
+.boxNumQuiz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: auto;
+    // background-color: #0005;
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 20rem);
+    @media (max-width: @tablet) {
+        width: 80%;
+        left: 10%;
+    }
+    .quizNum {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .box {
+        width: 2rem;
+        height: 2rem;
+        border: solid .1rem @color-04;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.respondido {
+            background-color: @color-05;
+            border: solid .1rem @color-05;
+            p {
+                color: @color-07;
+            }
+        }
+        &.atual {
+            background-color: @color-04;
+            p {
+                color: @color-07;
+            }
+        }
+        @media (max-width: @tablet) {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+        p {
+            margin: 0;
+            color: @color-04;
+            font-size: 1rem;
+            font-weight: 700;
+            @media (max-width: @tablet) {
+                font-size: .8rem;
+            }
+        }
+    }
+    .line {
+        width: 100%;
+        max-width: calc(100% / 9 - 2.5rem);
+        height: auto;
+        border-bottom: dotted .15rem @color-04;
+        @media (max-width: @tablet) {
+            max-width: calc(100% / 9 - 2rem);
+        }
+    }
+}

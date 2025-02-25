@@ -1,0 +1,128 @@
+.container-btn {
+
+    .botao {
+        cursor: pointer;
+        transition-duration: .3s;
+        &:hover {
+            transform: scale(.95);
+        }
+
+        &.btn-simple {
+            border-radius: 2rem;
+            padding: .2rem 2.5rem;
+            border: none;
+            &.btn-flex-download {
+                display: flex;
+                gap: 1rem;
+                padding: .4rem 2.5rem;
+            }
+
+            &.btn-border05 {
+                border: solid .15rem @color-05;
+            }
+        }
+
+        &.btn-noborder-h100 {
+            border: none;
+            height: 100%;
+        }
+
+        &.btn-type-01 {
+            box-shadow: 0.3em 0.3em 0.5em #0003;
+            border: solid .2rem @color-02;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            padding: 0 0 0 .5rem;
+            .container-image {
+                width: 3rem;
+                height: 3rem;
+                background-color: @color-02;
+                padding: .5rem .5rem .5rem .2rem;
+                display: flex;
+                align-items: center;
+                &:after{
+                    content: "";
+                    width: 0;
+                    height: 0.1rem;
+                    position: absolute;
+                    left: -.98rem;
+                    border-top: 0rem solid transparent;
+                    border-bottom: 3rem solid transparent;
+                    border-right: 1rem solid @color-02;
+                }
+            }
+        }
+
+        &.btn-type-saiba01,
+        &.btn-type-saiba02 {
+            padding: .2rem 1rem;
+            border: solid .2rem @color-white;
+            box-shadow: 0.3em 0.3em 0.5em #0003;
+        }
+
+        &.btn-type-saiba01 {
+            background-image: linear-gradient(@color-02, @color-03);
+        }
+
+        &.btn-type-saiba02 {
+            background-color: @color-02;
+        }
+
+        &.button-type-next-page01 {
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: 0;
+            margin: 0;
+            @media (max-width: @mobile) {
+                flex-direction: column;
+            }
+
+            &:hover {
+                transform: scale(1);
+            }
+
+            .text {
+                border: solid 0.2rem @color-01;
+                padding: .5rem 1rem;
+                border-radius: 3rem;
+                font-weight: 600;
+                text-align: left;
+            }
+            .container-image {
+                width: 3rem;
+            }
+        }
+
+        &.button-type-next-page05 {
+            border: none;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+            padding: 0;
+            margin: 0;
+            @media (max-width: @mobile) {
+                flex-direction: column;
+            }
+
+            &:hover {
+                transform: scale(1);
+            }
+
+            .text {
+                border: solid 0.2rem @color-05;
+                padding: .5rem 1rem;
+                border-radius: 3rem;
+                font-weight: 600;
+                text-align: left;
+            }
+            .container-image {
+                width: 3rem;
+            }
+        }
+    }
+
+}

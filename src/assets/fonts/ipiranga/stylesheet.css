@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('IpirangaTextos-Regular.woff2') format('woff2'),
+        url('IpirangaTextos-Regular.woff') format('woff'),
+        url('IpirangaTextos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('IpirangaTitulos-ExtraBold.woff2') format('woff2'),
+        url('IpirangaTitulos-ExtraBold.woff') format('woff'),
+        url('IpirangaTitulos-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('IpirangaTitulos-Bold.woff2') format('woff2'),
+        url('IpirangaTitulos-Bold.woff') format('woff'),
+        url('IpirangaTitulos-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('IpirangaTextos-Bold.woff2') format('woff2'),
+        url('IpirangaTextos-Bold.woff') format('woff'),
+        url('IpirangaTextos-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('IpirangaTextos-ExtraBold.woff2') format('woff2'),
+        url('IpirangaTextos-ExtraBold.woff') format('woff'),
+        url('IpirangaTextos-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Titulos';
+    src: url('IpirangaTitulos-Regular.woff2') format('woff2'),
+        url('IpirangaTitulos-Regular.woff') format('woff'),
+        url('IpirangaTitulos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ipiranga Textos';
+    src: url('IpirangaTextos-Medium.woff2') format('woff2'),
+        url('IpirangaTextos-Medium.woff') format('woff'),
+        url('IpirangaTextos-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

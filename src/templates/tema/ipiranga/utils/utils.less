@@ -1,0 +1,106 @@
+i {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.util-space-between {
+    justify-content: space-between;
+}
+
+.util-border-r2 {
+    border-radius: 2.5rem;
+}
+
+.util-border-r10 {
+    border-radius: 10rem;
+}
+
+.util-border-c05 {
+    border: solid .2rem @color-05;
+}
+
+.util-bg-black {
+    background-color: @color-black;
+    padding: 0 .5rem;
+    line-height: 1.45;
+}
+
+.util-bg-03 {
+    background-color: @color-03;
+    padding: 0 .5rem;
+    line-height: 1.45;
+}
+
+.util-shadow-png {
+    filter: drop-shadow(0.2rem 0.2rem 0.3rem #0003);
+}
+
+.util-border-shadow-box {
+    border: solid .2rem @color-05;
+    box-shadow: 0.3em 0.3em 0.5em #0003;
+}
+
+.util-shadow-box {
+    box-shadow: 0.3em 0.3em 0.5em #0003;
+}
+
+.util-shadow-box-up {
+    box-shadow: inset 0em 1em 1rem 0rem #0003;
+}
+
+.util-margin-auto {
+    margin: auto !important;
+}
+
+.util-text-light {
+    font-weight: 300;
+}
+
+.checked {
+    animation: none;
+    // filter: grayscale(1) !important;
+}
+
+.block {
+    pointer-events: none !important;
+    opacity: .4 !important;
+}
+
+.block-2 {
+    pointer-events: none !important;
+    opacity: .7 !important;
+    .container-image {
+        img {
+            animation: none !important;
+        }
+    }
+}
+
+.shadowDonw {
+    // z-index: 1;
+    box-shadow: 0rem 1rem 2rem #0005;
+}
+
+.object-position {
+    object-position: left;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.util-size-1 {
+    font-size: 1rem !important;
+}
+
+.util-size-tablet-1 {
+    @media (max-width: @tablet) {
+        font-size: 1rem;
+    }
+}
+
+.util-size-tablet-2 {
+    @media (max-width: @tablet) {
+        font-size: 2rem;
+    }
+}

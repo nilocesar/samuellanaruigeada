@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../../styles/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../../modules/flamboyant-props.min.css"/>
+</head>
+<body role="application">
+  <header>
+    <div class="headerTop"><img class="logo" src="../../assets/img/logo2.png"/>
+      <div class="boxFlex">
+        <button class="btnAcessibilidade acessibility_controll btn-Contrast"><img class="ico" src="../../assets/img/ico-acessibilidade.png"/>
+        </button>
+        <button class="btnHelp" data-modal="#help"><img class="ico" src="../../assets/img/ico-help.png"/>
+        </button>
+        <div class="component-template-header fixedHeader hamburguerAtivo" id="header"><label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="container-menu-list">
+            <button class="btn1" id="pag01" onclick="navigate.goto('pag01')">O fundo do Mar</button>
+            <button class="btn2 block" id="pag02" onclick="navigate.goto('pag02')">Os Segredos Ocultos do Fundo do Mar</button>
+            <button class="btn3 block" id="pag03" onclick="navigate.goto('pag03')">Espécies Marinhas</button>
+            <button class="btn4 block" id="pag03" onclick="navigate.goto('pag04')">Referências</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-line">
+      <div class="progress-line-porcentagem"></div>
+    </div>
+  </header>
+  <div class="modal interaction-modal parent-inside-col modal modal-help" id="help">
+    <div class="flex-center">
+      <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="0">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h2 class="title color-05 prop-m0" tabindex="1">Tela de ajuda</h2>
+              <div class="container-list">
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help1.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="2">Aceder ao Menu</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help2.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="3">Aceder à Tela de Ajuda</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help3.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="4">Desça a Página</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help4.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="5">Aceder ao Menu de Acessibilidade</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help6.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="6">Acompanhe seu Progresso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+      </div>
+    </div>
+  </div>
+  <interection>
+    <div class="container-interaction-arrows bottom   ">
+      <button class="container-arrow container-arrow-left arrow-left" tabindex="1001" role="button" aria-label="Voltar para a tela anterior." title="Seta para esquerda."></button>
+      <button class="container-arrow container-arrow-right arrow-right" tabindex="1000" role="button" aria-label="Avançar para a próxima tela." title="Seta para direita."></button>
+    </div>
+  </interection>
+  <body prev-hide next-hide>
+    <div class="onePage color-bg-02">
+      <section class="sec01 color-bg-08 shadowDonw">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full prop-pt10 prop-pb6" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h2 class="title color-05 prop-m0 prop-txt-up prop-txt-center" tabindex="1">Os Segredos Ocultos do Fundo do Mar</h2>
+              <h3 class="subtitle color-white prop-mt1 prop-txt-center" tabindex="2">Explorando as Profundezas Inexploradas</h3>
+              <p class="text color-white prop-txt-center" tabindex="3">A exploração do fundo do mar, impulsionada por tecnologias avançadas como submersíveis e sondas, tem revelado maravilhas como fontes hidrotermais, montanhas submarinas e espécies inéditas. Cada descoberta aproxima-nos mais de compreender a complexidade dos ecossistemas marinhos e a importância de os preservar para as gerações futuras.</p>
+              <p class="text color-white prop-txt-center" tabindex="4">Clique nos itens abaixo e acompanhe o que sabemos sobre o fundo do mar.</p>
+              <div class="container-list prop-mt2 list-type-div5">
+                <div class="container-btn">
+                  <button class="botao btn-noborder-h100 btn btn1 prop-w-porc100 up delay1" tabindex="5" aria-label="" data-modal="#modal01" item="" onClick="">
+                    <div class="container-item-card card-simple util-border-c05 util-space-between prop-p1 util-border-r10">
+                      <div class="container-image"><img class="pulse" src="../../assets/img/num1.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                      </div>
+                      <p class="text prop-mt2 prop-mb4 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1" tabindex="6">Ecossistemas</p>
+                    </div>
+                  </button>
+                </div>
+                <div class="container-btn">
+                  <button class="botao btn-noborder-h100 btn btn2 prop-mt2 prop-tablet-mt0 prop-w-porc100 up delay2 block-2" tabindex="7" aria-label="" data-modal="#modal02" item="" onClick="">
+                    <div class="container-item-card card-simple util-border-c05 util-space-between prop-p1 util-border-r10">
+                      <p class="text prop-mt4 prop-mb2 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1" tabindex="8">Biodiversidade</p>
+                      <div class="container-image"><img class="pulse" src="../../assets/img/num2.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="container-btn">
+                  <button class="botao btn-noborder-h100 btn btn3 prop-w-porc100 up delay3 block-2" tabindex="9" aria-label="" data-modal="#modal03" item="" onClick="">
+                    <div class="container-item-card card-simple util-border-c05 util-space-between prop-p1 util-border-r10">
+                      <div class="container-image"><img class="pulse" src="../../assets/img/num3.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                      </div>
+                      <p class="text prop-mt2 prop-mb4 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1" tabindex="10">Geologia</p>
+                    </div>
+                  </button>
+                </div>
+                <div class="container-btn">
+                  <button class="botao btn-noborder-h100 btn btn4 prop-mt2 prop-tablet-mt0 prop-w-porc100 up delay4 block-2" tabindex="11" aria-label="" data-modal="#modal04" item="" onClick="">
+                    <div class="container-item-card card-simple util-border-c05 util-space-between prop-p1 util-border-r10">
+                      <p class="text prop-mt4 prop-mb2 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1 util-size-1" tabindex="12">Descobertas</p>
+                      <div class="container-image"><img class="pulse" src="../../assets/img/num4.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+                <div class="container-btn">
+                  <button class="botao btn-noborder-h100 btn btn5 prop-w-porc100 up delay5 block-2" tabindex="13" aria-label="" data-modal="#modal05" item="" onClick="">
+                    <div class="container-item-card card-simple util-border-c05 util-space-between prop-p1 util-border-r10">
+                      <div class="container-image"><img class="pulse" src="../../assets/img/num5.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                      </div>
+                      <p class="text prop-mt2 prop-mb4 prop-txt-up prop-txt-center color-05 prop-txt-bold util-size-tablet-1" tabindex="14">Impacto</p>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal interaction-modal parent-inside-col modal modal-comum modal-comum06" id="modal01">
+          <div class="flex-center">
+            <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="15">
+              <div class="container-template-wildcard">
+                <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+                  <div class="wrapper">
+                    <div class="container-image"><img class="prop-h6 object-position" src="../../assets/img/num1b.png" alt="1 de 5." aria-label="1 de 5." tabindex="1"/>
+                    </div>
+                    <h3 class="subtitle color-01 prop-txt-up prop-m0 prop-txt-up" tabindex="2">Ecossistemas das Fontes Hidrotermais</h3>
+                    <p class="text color-01 prop-mt1" tabindex="3">Explorar as comunidades biológicas únicas encontradas nas fontes hidrotermais, incluindo organismos que dependem da quimiossíntese, e a importância dessas áreas para a ciência.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal interaction-modal parent-inside-col modal modal-comum modal-comum06" id="modal02">
+          <div class="flex-center">
+            <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="4">
+              <div class="container-template-wildcard">
+                <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+                  <div class="wrapper">
+                    <div class="container-image"><img class="prop-h6 object-position" src="../../assets/img/num2b.png" alt="2 de 5." aria-label="2 de 5." tabindex="1"/>
+                    </div>
+                    <h3 class="subtitle color-01 prop-txt-up prop-m0 prop-txt-up" tabindex="2">A Biodiversidade Marinha e Seus Desafios</h3>
+                    <p class="text color-01 prop-mt1" tabindex="3">Investigar a rica biodiversidade dos oceanos, a descoberta de novas espécies e os desafios que ameaçam a vida marinha, como a sobrepesca, a destruição de habitats e as espécies invasoras.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal interaction-modal parent-inside-col modal modal-comum modal-comum06" id="modal03">
+          <div class="flex-center">
+            <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="4">
+              <div class="container-template-wildcard">
+                <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+                  <div class="wrapper">
+                    <div class="container-image"><img class="prop-h6 object-position" src="../../assets/img/num3b.png" alt="3 de 5." aria-label="3 de 5." tabindex="1"/>
+                    </div>
+                    <h3 class="subtitle color-01 prop-txt-up prop-m0 prop-txt-up" tabindex="2">Geologia</h3>
+                    <p class="text color-01 prop-mt1" tabindex="3">Analisar as características geológicas do fundo do mar, como as dorsais meso-oceânicas, fossas oceânicas, montes submarinos e planícies abissais, e o seu papel na tectónica de placas.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal interaction-modal parent-inside-col modal modal-comum modal-comum06" id="modal04">
+          <div class="flex-center">
+            <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="4">
+              <div class="container-template-wildcard">
+                <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+                  <div class="wrapper">
+                    <div class="container-image"><img class="prop-h6 object-position" src="../../assets/img/num4b.png" alt="4 de 5." aria-label="4 de 5." tabindex="1"/>
+                    </div>
+                    <h3 class="subtitle color-01 prop-txt-up prop-m0 prop-txt-up" tabindex="2">Descobertas Científicas Recentes</h3>
+                    <p class="text color-01 prop-mt1" tabindex="3">Examinar as descobertas mais recentes sobre a vida e os processos no fundo do mar, incluindo novas espécies, formas de vida extremófilas e os impactos das mudanças climáticas em ambientes profundos.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal interaction-modal parent-inside-col modal modal-comum modal-comum06" id="modal05">
+          <div class="flex-center">
+            <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="4">
+              <div class="container-template-wildcard">
+                <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+                  <div class="wrapper">
+                    <div class="container-image"><img class="prop-h6 object-position" src="../../assets/img/num5b.png" alt="5 de 5." aria-label="5 de 5." tabindex="1"/>
+                    </div>
+                    <h3 class="subtitle color-01 prop-txt-up prop-m0 prop-txt-up" tabindex="2">Impacto Humano nas Profundezas Oceânicas</h3>
+                    <p class="text color-01 prop-mt1" tabindex="3">Investigar os efeitos das atividades humanas no fundo do mar, como a mineração de profundidade, a poluição por plásticos e produtos químicos, e as implicações dessas ações para os ecossistemas profundos.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec02">
+        <div class="container-template-wildcard">
+          <div class="row-wrap">
+            <div class="col     col-01   prop-pt6 prop-pb6 prop-tablet-pb0" alt="" aria-label="" tabindex="-1">
+              <div class="wrapper">
+                <h2 class="title color-01 prop-m0" tabindex="1">Nas profundezas oceânicas,</h2>
+                <p class="text color-white prop-mt1" tabindex="2">Encontramos desde microrganismos que prosperam em fontes hidrotermais, utilizando quimiossíntese para obter energia, até gigantes como o polvo Dumbo e a lula colossal.</p>
+                <p class="text color-white prop-mt1" tabindex="3">Além disso, os ecossistemas bentónicos, que incluem planícies abissais, montes submarinos e cânions oceânicos, são repletos de vida surpreendente, como corais de águas profundas, esponjas e uma variedade de peixes e invertebrados.</p>
+              </div>
+            </div>
+            <div class="col col-bg    col-02   prop-pt6 prop-pb6" alt="" aria-label="" tabindex="-1">
+              <div class="col-bg-int" style="background-image: url(../../assets/img/bg03.png);"></div>
+              <div class="wrapper">
+                <div class="container-image"><img src="../../assets/img/img21.png" alt="Recife de coral branqueado." aria-label="Recife de coral branqueado." tabindex="4"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec03 color-bg-08">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full prop-pt6 prop-pb6" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h3 class="subtitle color-white prop-m0 prop-txt-center" tabindex="1">Conheça alguns animais do alto mar.</h3>
+              <div class="container-list prop-mt3 list-type-div3">
+                <div class="container-item-card util-border-r2 color-bg-05">
+                  <div class="container-image"><img class="prop-h12" src="../../assets/img/img11.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-m0 prop-mt1 prop-txt-center color-01" tabindex="2"><b>Lula Colossal</b></p>
+                  <p class="text prop-mt1 prop-txt-center color-01" tabindex="3">A lula colossal, uma das maiores espécies de lulas, pode alcançar até 14 metros de comprimento. Habita as águas profundas do Oceano Antártico, tem grandes olhos adaptados à escuridão e ganchos giratórios nos tentáculos para capturar presas.</p>
+                </div>
+                <div class="container-item-card util-border-r2 color-bg-05">
+                  <div class="container-image"><img class="prop-h12" src="../../assets/img/img12.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-m0 prop-mt1 prop-txt-center color-01" tabindex="4"><b>Peixe-Lanterna</b></p>
+                  <p class="text prop-mt1 prop-txt-center color-01" tabindex="5">Os peixes-lanterna são pequenos peixes bioluminescentes que habitam as profundezas oceânicas. Eles têm órgãos produtores de luz ao longo do corpo, usados para camuflagem e comunicação.</p>
+                </div>
+                <div class="container-item-card util-border-r2 color-bg-05">
+                  <div class="container-image"><img class="prop-h12" src="../../assets/img/img13.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-m0 prop-mt1 prop-txt-center color-01" tabindex="6"><b>Enguia-Pelicano</b></p>
+                  <p class="text prop-mt1 prop-txt-center color-01" tabindex="7">A enguia-pelicano, também conhecida como enguia-boca-de-pelicano, é encontrada em águas profundas e é reconhecida pela sua enorme boca e barriga distensível, que lhe permitem capturar e engolir presas grandes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec04 color-bg-07">
+        <div class="container-template-wildcard up">
+          <div class="row-wrap">
+            <div class="col col-bg    col-01   prop-pt6 prop-pb6 prop-tablet-pb3" alt="" aria-label="" tabindex="-1">
+              <div class="col-bg-int" style="background-image: url(../../assets/img/bg03.png);"></div>
+              <div class="wrapper">
+                <div class="container-image"><img src="../../assets/img/img09.png" alt="Fundo oceânico com corais e luz." aria-label="Fundo oceânico com corais e luz." tabindex="1"/>
+                </div>
+              </div>
+            </div>
+            <div class="col     col-02   prop-pt6 prop-pb6 prop-tablet-pt0" alt="" aria-label="" tabindex="-1">
+              <div class="wrapper">
+                <p class="text color-white prop-mt1" tabindex="2">A descoberta contínua de novas espécies e habitats demonstra a complexidade e a importância da conservação desses ecossistemas únicos, que desempenham um papel crucial na saúde dos oceanos e na regulação do clima global.</p>
+                <div class="container-btn">
+                  <button class="botao button-type-next-page05 zoomIn prop-mt2" tabindex="3" aria-label="" item="">
+                    <p class="text color-05" tabindex="4">Clique para seguir para o próximo tópico.</p>
+                    <div class="container-image"><img class="pulse" src="../../assets/img/arrow05.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</body>
+<script src="../../scripts/jquery.min.js"></script>
+<script src="../../scripts/jquery-ui.min.js"></script>
+<script src="../../scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="../../scripts/components.mixin.scripts.js"></script>
+<script src="../../scripts/page.js"></script>
+<script src="script.js"></script>

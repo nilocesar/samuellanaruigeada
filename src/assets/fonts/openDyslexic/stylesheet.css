@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('OpenDyslexic-Italic.eot');
+    src: url('OpenDyslexic-Italic.eot?#iefix') format('embedded-opentype'),
+        url('OpenDyslexic-Italic.woff2') format('woff2'),
+        url('OpenDyslexic-Italic.woff') format('woff'),
+        url('OpenDyslexic-Italic.ttf') format('truetype'),
+        url('OpenDyslexic-Italic.svg#OpenDyslexic-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('OpenDyslexic-Bold.eot');
+    src: url('OpenDyslexic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OpenDyslexic-Bold.woff2') format('woff2'),
+        url('OpenDyslexic-Bold.woff') format('woff'),
+        url('OpenDyslexic-Bold.ttf') format('truetype'),
+        url('OpenDyslexic-Bold.svg#OpenDyslexic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('OpenDyslexic-BoldItalic.eot');
+    src: url('OpenDyslexic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OpenDyslexic-BoldItalic.woff2') format('woff2'),
+        url('OpenDyslexic-BoldItalic.woff') format('woff'),
+        url('OpenDyslexic-BoldItalic.ttf') format('truetype'),
+        url('OpenDyslexic-BoldItalic.svg#OpenDyslexic-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('OpenDyslexic-Regular.eot');
+    src: url('OpenDyslexic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('OpenDyslexic-Regular.woff2') format('woff2'),
+        url('OpenDyslexic-Regular.woff') format('woff'),
+        url('OpenDyslexic-Regular.ttf') format('truetype'),
+        url('OpenDyslexic-Regular.svg#OpenDyslexic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

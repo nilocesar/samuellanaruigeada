@@ -1,0 +1,38 @@
+.container-item-card {
+    align-items: initial;
+    padding: 2rem;
+
+    &.card-simple {
+        padding: 0;
+    }
+    
+    &.card-infinity-left-02 {
+        padding: 2rem;
+        z-index: 0;
+        &::after {
+            content: '';
+            width: 100vw;
+            height: 100%;
+            background-color: @color-02;
+            position: absolute;
+            top: 0;
+            right: 50%;
+            z-index: -1;
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: skewX(-10deg);
+            background-color: @color-02;
+            z-index: -1;
+            @media (max-width: @tablet) {
+                transform: skewX(0);
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+mixin numQuiz(name)
+    .boxNumQuiz
+        p.quizNum= name
+        - for (let i = 1; i <= 10; i++)
+            - let boxClass = 'box' + i
+            .box(class=boxClass)
+                p.num= i
+                p.check.hide ✔
+                p.error.hide ✖
+            if i !== 10
+                .line

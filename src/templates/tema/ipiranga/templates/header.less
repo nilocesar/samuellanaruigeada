@@ -1,0 +1,117 @@
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top:3rem;
+    @media (max-width: @tablet) {
+        scroll-padding-top:4rem;
+    }
+}
+
+header {
+    background-color: @color-01;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+    box-shadow: 0rem 0.3rem 1rem #0005;
+
+    .headerTop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 0.5rem 1rem;
+        padding-right: 1rem;
+
+        .logo {
+            height: 5rem;
+        }
+
+        .boxFlex {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            button.btnHelp {
+                z-index: 1;
+                width: 2rem;
+                border: none;
+                cursor: pointer;
+                position: relative;
+                top: 0.3rem;
+
+                .ico {
+                    width: 100%;
+                }
+            }
+
+            button.btnAcessibilidade {
+              z-index: 1;
+              width: 2rem;
+              border: none;
+              cursor: pointer;
+              position: relative;
+              top: 0.3rem;
+
+              .ico {
+                width: 100%;
+              }
+            }
+
+            .component-template-header {
+                background-color: @color-01;
+                position: initial;
+                top: 0;
+                left: 0;
+                width: auto;
+                height: auto;
+
+                label {
+                    cursor: pointer;
+                    color: @color-05;
+                }
+
+                .container-menu-list {
+                    background-color: @color-05;
+                    right: 0;
+                    animation: menuList .5s ease-in-out;
+                    left: auto !important;
+                    width: auto !important;
+                    max-width: 100vw;
+                    padding: 1rem 2rem;
+                    box-shadow: 0rem 0rem 1rem #0005;
+                    gap: 1rem;
+
+                    button,
+                    a {
+                        width: 100% !important;
+                        text-align: left;
+                        text-decoration: none;
+                        color: @color-07;
+                        font-size: @font-05;
+                        border-bottom: 0.1rem solid @color-07;
+                        padding-bottom: 0.5rem;
+                        font-weight: 600;
+                    }
+                }
+
+                @keyframes menuList {
+                    from {
+                        right: -100%;
+                    }
+                    to {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .progress-line {
+        height: .5rem;
+        background-color: transparent;
+        .progress-line-porcentagem {
+            background-color: @color-05;
+        }
+    }
+}

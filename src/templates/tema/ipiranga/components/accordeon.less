@@ -1,0 +1,111 @@
+.container-accordeon {
+    &.accordeon-type-02 {
+        .interaction-accordeon {
+            .bloco {
+                .corpbtn {
+                    .accordeon-title {
+                        position: relative;
+                        height: auto;
+                        padding: 0;
+                        background-color: @color-02;
+                        border-radius: 3rem;
+                        z-index: 1;
+    
+                        h4 {
+                            width: calc(100% - 4rem);
+                            text-align: left;
+                            padding: .5rem 1rem;
+                            margin: 0;
+                        }
+    
+                        .seta-container {
+                            animation: none;
+                            border: none;
+                            width: 3.2rem;
+                            height: 3.2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            // background-image: linear-gradient(@color-02, @color-03);
+                            // border: solid .2rem @color-05;
+                            .img {
+                                width: 60%;
+                            }
+                        }
+
+                        &.is-opened {
+                            .seta-container {
+                                .img {
+                                    background-image: url(../../assets/img/seta_accordeonb.png);
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+    
+                    .accordeon-texto {
+                        background-color: transparent;
+                        border: none;
+                        padding: 3.5rem 2rem 2rem;
+                        margin-top: -1.5rem;
+                        border: solid @color-white .2rem;
+                        border-radius: 0 0 2rem 2rem;
+                        @media (max-width: @tablet) {
+                            // padding: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.accordeon-type-03 {
+        .interaction-accordeon {
+            .bloco {
+                .corpbtn {
+                    .accordeon-title {
+                        height: auto;
+                        padding: 0;
+                        background-color: @color-03;
+                        box-shadow: 0.1em 0.1em 0.3em #0003;
+    
+                        h4 {
+                            color: @color-white;
+                            width: calc(100% - 4rem);
+                            text-align: left;
+                            padding: 0 1rem;
+                            margin: 0;
+                        }
+    
+                        .seta-container {
+                            animation: none;
+                            border: none;
+                            width: 3.2rem;
+                            height: 3.2rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-image: linear-gradient(@color-02, @color-03);
+                            border: solid .2rem @color-05;
+                            .img {
+                                width: 60%;
+                            }
+                        }
+                    }
+    
+                    .accordeon-texto {
+                        background-color: @color-05;
+                        border: none;
+                        padding: 2rem;
+                        @media (max-width: @tablet) {
+                            // padding: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

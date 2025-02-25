@@ -1,0 +1,577 @@
+extends ../../templates/page/page-base.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    body(prev-hide, next-hide)
+        .onePage.color-bg-07
+            section.sec01.color-bg-07
+                +template-image-mapping({
+                    class: 'prop-mt10 prop-mb6',
+                    bg:'',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: ''
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Espécies Marinhas',
+                                        class: 'color-05 prop-m0 prop-txt-up'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'As espécies marinhas são uma parte essencial dos ecossistemas oceânicos, desempenhando papéis cruciais na manutenção do equilíbrio ambiental. Estes organismos variam desde microscópicos fitoplânctons até gigantescos mamíferos como as baleias.',
+                                        class: 'color-white prop-mt1'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'O oceano alberga uma biodiversidade impressionante, com uma estimativa de milhões de espécies, muitas das quais ainda desconhecidas pela ciência.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Conservação',
+                                        class: 'color-05 prop-mt1'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A conservação das espécies marinhas é fundamental para a sustentabilidade dos oceanos. No entanto, diversas ameaças, como a poluição, a pesca excessiva, a mudança climática e a destruição de habitats, colocam em risco muitas dessas espécies.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'guide',
+                                    resource: {
+                                        class: 'guide06 prop-mt1',
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    src: 'click07.png',
+                                                    class: '',
+                                                    alt: ''
+                                                }
+                                            },
+                                            {
+                                                type: 'subtext',
+                                                resource: {
+                                                    content: 'Clique nos botões para conhecer alguns tipos de Espécies Marinhas!',
+                                                    class: 'color-07 prop-txt-bold'
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-tablet-pt2'
+                                },
+                                {
+                                    type: 'image-mapping',
+                                    resource: {
+                                        nextLiberate: false,
+                                        pinsLiberate: true,
+                                        content:[
+                                            {
+                                                model: 'modal',
+                                                screen:{
+                                                    src: 'map01.png',
+                                                    class: '',
+                                                    alt: '',
+                                                },
+                                                pins:[
+                                                    {
+                                                        x:607,
+                                                        y:107,
+                                                        data: [
+                                                            {
+                                                                type: 'image',
+                                                                resource: {
+                                                                    src: 'pin2.png',
+                                                                    class: 'pulse',
+                                                                    alt: 'Clique aqui'
+                                                                }
+                                                            },
+                                                        ],
+                                                        info:{
+                                                            modal:'#modal01'
+                                                        }
+                                                    },
+                                                    {
+                                                        x:450,
+                                                        y:450,
+                                                        data: [
+                                                            {
+                                                                type: 'image',
+                                                                resource: {
+                                                                    src: 'pin2.png',
+                                                                    class: 'pulse',
+                                                                    alt: ''
+                                                                }
+                                                            },
+                                                        ],
+                                                        info:{
+                                                            modal:'#modal02'
+                                                        }
+                                                    },
+                                                    {
+                                                        x:240,
+                                                        y:960,
+                                                        data: [
+                                                            {
+                                                                type: 'image',
+                                                                resource: {
+                                                                    src: 'pin2.png',
+                                                                    class: 'pulse',
+                                                                    alt: ''
+                                                                }
+                                                            },
+                                                        ],
+                                                        info:{
+                                                            modal:'#modal03'
+                                                        }
+                                                    },
+                                                ]
+                                            },
+                                        ]
+                                    },
+                                },
+                            ],
+                        },
+                    ]
+                })
+                +modal('modal01', 'modal modal-comum modal-comum07', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'title',
+                                        resource: {
+                                            content: 'Tartaruga Marinha',
+                                            class: 'color-05 prop-m0'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'São répteis que habitam os oceanos tropicais e subtropicais do mundo. Existem sete espécies reconhecidas de tartarugas marinhas: tartaruga-de-couro, tartaruga-verde, tartaruga-de-pente, tartaruga-cabeçuda, tartaruga-oliva, tartaruga-de-kemp e a tartaruga-flatback. Estas espécies desempenham um papel vital nos ecossistemas marinhos, ajudando a manter a saúde dos recifes de corais e das pradarias marinhas.',
+                                            class: 'color-white prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'img14.png',
+                                            class: '',
+                                            alt: 'Tartaruga dentro do mar azul claro.'
+                                        }
+                                    },
+                                ]
+                            },
+                        ]
+                    })
+                +modal('modal02', 'modal modal-comum modal-comum07', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'title',
+                                        resource: {
+                                            content: 'Peixes Marinhos',
+                                            class: 'color-05 prop-m0'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Os peixes marinhos são uma parte fundamental dos ecossistemas oceânicos, desempenhando papéis essenciais nas cadeias alimentares e na saúde geral dos ambientes marinhos. Estes peixes variam enormemente em tamanho, forma e comportamento, desde os pequenos e coloridos peixes de recife, como os peixes-palhaço, até os grandes predadores pelágicos, como os tubarões e atuns.',
+                                            class: 'color-white prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'img19.png',
+                                            class: '',
+                                            alt: 'Peixe palhaço e um recife de coral.'
+                                        }
+                                    },
+                                ]
+                            },
+                        ]
+                    })
+                +modal('modal03', 'modal modal-comum modal-comum07', '')
+                    +template-wildcard({
+                        class: '',
+                        columns:[
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'title',
+                                        resource: {
+                                            content: 'Algas e Corais',
+                                            class: 'color-05 prop-m0'
+                                        }
+                                    },
+                                    {
+                                        type: 'text',
+                                        resource: {
+                                            content: 'Tanto as algas quanto os corais são essenciais para a saúde dos ecossistemas marinhos. As algas fornecem oxigénio e são a base da cadeia alimentar, enquanto os corais criam habitats complexos que abrigam uma diversidade incrível de vida marinha. A conservação desses organismos é crucial para manter a biodiversidade e a funcionalidade dos oceanos. Esforços de conservação, como a criação de áreas marinhas protegidas e a redução da poluição, são essenciais para garantir a sobrevivência e a prosperidade desses importantes componentes dos ecossistemas marinhos.',
+                                            class: 'color-white prop-mt1'
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                col:[
+                                    {
+                                        type: 'class',
+                                        resource: ''
+                                    },
+                                    {
+                                        type: 'image',
+                                        resource: {
+                                            classContainer: '',
+                                            src: 'img20.png',
+                                            class: '',
+                                            alt: 'Coral colorido dentro do mar e um peixe branco.'
+                                        }
+                                    },
+                                ]
+                            },
+                        ]
+                    })
+
+            //- section.sec02.color-bg-07
+            //-     +template-image-mapping({
+            //-         class: 'prop-mb6',
+            //-         bg:'',
+            //-         columns:[
+            //-             {
+            //-                 col:[
+            //-                     {
+            //-                         type: 'class',
+            //-                         resource: ''
+            //-                     },
+            //-                     {
+            //-                         type: 'title',
+            //-                         resource: {
+            //-                             content: 'As Zonas Marinhas',
+            //-                             class: 'color-05 prop-m0 prop-txt-center'
+            //-                         }
+            //-                     },
+            //-                     {
+            //-                         type: 'text',
+            //-                         resource: {
+            //-                             content: 'São divididas com base em diferentes critérios, como profundidade, distância da costa e penetração da luz. Cada zona tem características ecológicas e ambientais únicas. Abaixo estão as principais zonas marinhas:',
+            //-                             class: 'color-white prop-mt1 prop-txt-center'
+            //-                         }
+            //-                     },
+            //-                     {
+            //-                         type: 'guide',
+            //-                         resource: {
+            //-                             class: 'guide06 prop-mt1 prop-mb1 util-margin-auto',
+            //-                             content: [
+            //-                                 {
+            //-                                     type: 'image',
+            //-                                     resource: {
+            //-                                         src: 'click07.png',
+            //-                                         class: '',
+            //-                                         alt: ''
+            //-                                     }
+            //-                                 },
+            //-                                 {
+            //-                                     type: 'subtext',
+            //-                                     resource: {
+            //-                                         content: 'Clique nos botões para conhecer alguns tipos de zonas marinhas!',
+            //-                                         class: 'color-07 prop-txt-bold'
+            //-                                     }
+            //-                                 },
+            //-                             ]
+            //-                         }
+            //-                     },
+            //-                     {
+            //-                         type: 'image-mapping',
+            //-                         resource: {
+            //-                             nextLiberate: false,
+            //-                             pinsLiberate: true,
+            //-                             content:[
+            //-                                 {
+            //-                                     model: 'map-txt-ref',
+            //-                                     screen:{
+            //-                                         src: 'map02.png',
+            //-                                         class: '',
+            //-                                         alt: '',
+            //-                                     },
+            //-                                     pins:[
+            //-                                         {
+            //-                                             x:170,
+            //-                                             y:570,
+            //-                                             data: [
+            //-                                                 {
+            //-                                                     type: 'image',
+            //-                                                     resource: {
+            //-                                                         src: 'pin2.png',
+            //-                                                         class: 'pulse',
+            //-                                                         alt: ''
+            //-                                                     }
+            //-                                                 },
+            //-                                             ],
+            //-                                             info:{
+            //-                                                 data: [
+            //-                                                     {
+            //-                                                         type: 'card',
+            //-                                                         resource: {
+            //-                                                             class: 'posAbsolute1',
+            //-                                                             content: [
+            //-                                                                 {
+            //-                                                                     type: 'image',
+            //-                                                                     resource: {
+            //-                                                                         classContainer: '',
+            //-                                                                         src: 'boxtxt1.png',
+            //-                                                                         class: '',
+            //-                                                                         alt: 'Poços Convencionais: Nessa modalidade, poços de petróleo são perfurados verticalmente para acessar os reservatórios de petróleo. Quando a pressão do reservatório é suficiente, o petróleo pode fluir naturalmente para a superfície. No entanto, em alguns casos, técnicas de elevação artificial, como bombeamento, podem ser necessárias para impulsionar a produção.'
+            //-                                                                     }
+            //-                                                                 },
+            //-                                                                 {
+            //-                                                                     type: 'image',
+            //-                                                                     resource: {
+            //-                                                                         classContainer: 'closeBox closeBox1',
+            //-                                                                         src: 'btn-close-feed.svg',
+            //-                                                                         class: '',
+            //-                                                                         alt: ''
+            //-                                                                     }
+            //-                                                                 },
+            //-                                                             ]
+            //-                                                         }
+            //-                                                     },
+            //-                                                 ]
+            //-                                             }
+            //-                                         },
+            //-                                         {
+            //-                                             x:1750,
+            //-                                             y:1220,
+            //-                                             data: [
+            //-                                                 {
+            //-                                                     type: 'image',
+            //-                                                     resource: {
+            //-                                                         src: 'pin2.png',
+            //-                                                         class: 'pulse',
+            //-                                                         alt: ''
+            //-                                                     }
+            //-                                                 },
+            //-                                             ],
+            //-                                             info:{
+            //-                                                 data: [
+            //-                                                     {
+            //-                                                         type: 'card',
+            //-                                                         resource: {
+            //-                                                             class: 'posAbsolute2',
+            //-                                                             content: [
+            //-                                                                 {
+            //-                                                                     type: 'image',
+            //-                                                                     resource: {
+            //-                                                                         classContainer: '',
+            //-                                                                         src: 'boxtxt2.png',
+            //-                                                                         class: '',
+            //-                                                                         alt: 'Recuperação Secundária e Terciária: Essa forma de exploração onshore envolve a extração de petróleo de reservatórios não convencionais, como xisto betuminoso e areias betuminosas. A exploração não convencional requer tecnologias avançadas, como a fraturação hidráulica (fracking) para liberar o petróleo aprisionado nas rochas.'
+            //-                                                                     }
+            //-                                                                 },
+            //-                                                                 {
+            //-                                                                     type: 'image',
+            //-                                                                     resource: {
+            //-                                                                         classContainer: 'closeBox closeBox2',
+            //-                                                                         src: 'btn-close-feed.svg',
+            //-                                                                         class: '',
+            //-                                                                         alt: ''
+            //-                                                                     }
+            //-                                                                 },
+            //-                                                             ]
+            //-                                                         }
+            //-                                                     },
+            //-                                                 ]
+            //-                                             }
+            //-                                         },
+            //-                                         {
+            //-                                             x:2250,
+            //-                                             y:1720,
+            //-                                             data: [
+            //-                                                 {
+            //-                                                     type: 'image',
+            //-                                                     resource: {
+            //-                                                         src: 'pin2.png',
+            //-                                                         class: 'pulse',
+            //-                                                         alt: ''
+            //-                                                     }
+            //-                                                 },
+            //-                                             ],
+            //-                                             info:{
+            //-                                                 data: [
+            //-                                                     {
+            //-                                                         type: 'card',
+            //-                                                         resource: {
+            //-                                                             class: 'posAbsolute3',
+            //-                                                             content: [
+            //-                                                                 {
+            //-                                                                     type: 'image',
+            //-                                                                     resource: {
+            //-                                                                         classContainer: '',
+            //-                                                                         src: 'boxtxt3.png',
+            //-                                                                         class: '',
+            //-                                                                         alt: 'Poços Não Convencionais: Em campos de petróleo mais maduros, as técnicas de recuperação secundária e terciária são aplicadas para aumentar a produção. Isso pode incluir a injeção de água, gases ou produtos químicos no reservatório para melhorar a recuperação do petróleo remanescente.'
+            //-                                                                     }
+            //-                                                                 },
+            //-                                                                 {
+            //-                                                                     type: 'image',
+            //-                                                                     resource: {
+            //-                                                                         classContainer: 'closeBox closeBox3',
+            //-                                                                         src: 'btn-close-feed.svg',
+            //-                                                                         class: '',
+            //-                                                                         alt: ''
+            //-                                                                     }
+            //-                                                                 },
+            //-                                                             ]
+            //-                                                         }
+            //-                                                     },
+            //-                                                 ]
+            //-                                             }
+            //-                                         },
+            //-                                     ]
+            //-                                 },
+            //-                             ]
+            //-                         },
+            //-                     },
+            //-                 ]
+            //-             },
+            //-         ]
+            //-     })
+
+            section.sec03.color-bg-05
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt3 prop-pb3 left'
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: ' #Dica!',
+                                        class: 'color-01 prop-m0'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Cada uma dessas zonas marinhas possui características únicas que determinam os tipos de organismos que podem viver ali e as suas adaptações específicas ao ambiente.',
+                                        class: 'color-01 prop-mt1'
+                                    }
+                                },
+
+                            ]
+                        },
+                    ]
+                })
+
+            section.sec05.color-bg-02
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt3 prop-pb3'
+                                },
+                                {
+                                    type: 'button',
+                                    resource: {
+                                        alt: '',
+                                        classContainer: '',
+                                        class: 'button-type-next-page01 zoomIn util-margin-auto',
+                                        attr:{
+                                            item: '',
+                                        },
+                                        content: [
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Clique para seguir para o próximo tópico.',
+                                                    class: 'color-01'
+                                                }
+                                            },
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'arrow01.png',
+                                                    class: 'pulse',
+                                                    alt: ''
+                                                }
+                                            },
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                    ]
+                })
+
+block scripts
+  script(src="script.js")

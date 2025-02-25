@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../../styles/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../../modules/flamboyant-props.min.css"/>
+</head>
+<body role="application">
+  <header>
+    <div class="headerTop"><img class="logo" src="../../assets/img/logo2.png"/>
+      <div class="boxFlex">
+        <button class="btnAcessibilidade acessibility_controll btn-Contrast"><img class="ico" src="../../assets/img/ico-acessibilidade.png"/>
+        </button>
+        <button class="btnHelp" data-modal="#help"><img class="ico" src="../../assets/img/ico-help.png"/>
+        </button>
+        <div class="component-template-header fixedHeader hamburguerAtivo" id="header"><label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="container-menu-list">
+            <button class="btn1" id="pag01" onclick="navigate.goto('pag01')">O fundo do Mar</button>
+            <button class="btn2 block" id="pag02" onclick="navigate.goto('pag02')">Os Segredos Ocultos do Fundo do Mar</button>
+            <button class="btn3 block" id="pag03" onclick="navigate.goto('pag03')">Espécies Marinhas</button>
+            <button class="btn4 block" id="pag03" onclick="navigate.goto('pag04')">Referências</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-line">
+      <div class="progress-line-porcentagem"></div>
+    </div>
+  </header>
+  <div class="modal interaction-modal parent-inside-col modal modal-help" id="help">
+    <div class="flex-center">
+      <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="0">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h2 class="title color-05 prop-m0" tabindex="1">Tela de ajuda</h2>
+              <div class="container-list">
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help1.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="2">Aceder ao Menu</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help2.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="3">Aceder à Tela de Ajuda</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help3.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="4">Desça a Página</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help4.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="5">Aceder ao Menu de Acessibilidade</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help6.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="6">Acompanhe seu Progresso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+      </div>
+    </div>
+  </div>
+  <interection>
+    <div class="container-interaction-arrows bottom   ">
+      <button class="container-arrow container-arrow-left arrow-left" tabindex="1001" role="button" aria-label="Voltar para a tela anterior." title="Seta para esquerda."></button>
+      <button class="container-arrow container-arrow-right arrow-right" tabindex="1000" role="button" aria-label="Avançar para a próxima tela." title="Seta para direita."></button>
+    </div>
+  </interection>
+  <body prev-hide next-hide>
+    <div class="onePage color-bg-05">
+      <section class="sec01 full-H shadowDonw"><img class="animaCircle" src="../../assets/img/detal.png"/>
+        <div class="container-template-wildcard">
+          <video class="col-video-full" src="../../assets/video/capa.mp4" tabindex="-1" autoplay="autoplay" loop="loop" muted="muted"></video>
+          <div class="col     col-wide1 col-wide  blend-video" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+            </div>
+          </div>
+          <div class="col     col-01  col-full prop-pt10 prop-pb10" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <div class="container-item-card card-simple card-style-section prop-mt4">
+                <h1 class="bigtitle color-05 prop-txt-center prop-m0 text-capa" tabindex="1">O Fundo do Mar</h1>
+                <h3 class="subtitle color-white prop-txt-center prop-mt1" tabindex="2">O Mais Profundo dos Assuntos</h3>
+                <div class="boxInfo guide guide-mouse">
+                  <div class="container-image prop-mt1 down infinite"><img src="../../assets/img/mouse.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec02 color-bg-05 util-shadow-box-up">
+        <div class="container-template-wildcard">
+          <div class="row-wrap">
+            <div class="col col-bg    col-01   prop-pt6 prop-pb6" alt="" aria-label="" tabindex="-1">
+              <div class="col-bg-int" style="background-image: url(../../assets/img/bg02.png);"></div>
+              <div class="wrapper">
+                <div class="container-image"><img src="../../assets/img/img22.png" alt="Luz solar penetrando na água azul do oceano." aria-label="Luz solar penetrando na água azul do oceano." tabindex="1"/>
+                </div>
+              </div>
+            </div>
+            <div class="col     col-02   prop-pt3 prop-pb3 prop-tablet-pt0 prop-tablet-pb6" alt="" aria-label="" tabindex="-1">
+              <div class="wrapper">
+                <h2 class="title color-01 prop-m0" tabindex="2">Os Mistérios das Profundezas do Oceano</h2>
+                <p class="text color-01 prop-mt1" tabindex="3">As profundezas do oceano são um vasto e inexplorado território, albergando uma diversidade de vida marinha e fenómenos geológicos que continuam a intrigar cientistas e exploradores. Em áreas como a Fossa das Marianas, a mais profunda do planeta, a pressão é tão esmagadora que apenas os veículos submersíveis mais avançados conseguem atingir tais profundidades.</p>
+                <p class="text color-01 prop-mt1" tabindex="4">Nessas regiões, a escuridão é total e a vida marinha adaptou-se a condições extremas, desenvolvendo características únicas e fascinantes. A exploração destas profundezas não só amplia o nosso conhecimento sobre a biodiversidade marinha, como também pode revelar novos recursos naturais e fornecer informações valiosas sobre a história geológica da Terra.</p>
+                <p class="text color-01 prop-mt1" tabindex="5"><b>Então, não perca tempo e deslize para baixo para começar!</b></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec03 color-bg-08 animaTop">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full prop-pt6 prop-pb6" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h2 class="title color-05 prop-txt-center prop-m0" tabindex="1">Qual é a importância dos oceanos para o clima global?</h2>
+              <p class="text color-white prop-txt-center prop-mt1" tabindex="2">Os oceanos são responsáveis pela absorção de cerca de um quarto do dióxido de carbono emitido pelas atividades humanas, o que ajuda a mitigar os efeitos das alterações climáticas. A interação entre os oceanos e a atmosfera também influencia padrões climáticos, como o fenómeno El Niño, que pode causar variações significativas no clima global.</p>
+              <p class="text color-white prop-txt-center prop-mt1" tabindex="3">Assim, a saúde e a estabilidade dos oceanos são fundamentais para manter o equilíbrio climático da Terra.</p>
+              <p class="text color-white prop-txt-center prop-mt1" tabindex="4">Deslize para baixo e acompanhe os grandes marcos do clima global!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec04 color-bg-08 timeLine animaTop">
+        <div class="flex">
+          <div class="respiroTop"></div>
+          <div class="line"></div>
+          <div class="box reverse up">
+            <div class="container img"><img class="img" src="../../assets/img/img02.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="5">1872</h1>
+            </div>
+            <div class="container">
+              <div class="bg bg1"></div>
+              <div class="boxText" tabindex="6">
+                <h2 class="title">Século XIX</h2>
+                <h3 class="subtitle">HMS Challenger</h3>
+                <p class="text prop-mt1">Uma das descobertas mais importantes sobre o oceano foi realizada pela expedição do navio HMS Challenger, que navegou entre 1872 e 1876. Esta expedição é amplamente considerada a primeira verdadeira investigação científica dos oceanos e marcou o início da oceanografia moderna.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box up">
+            <div class="container img"><img class="img" src="../../assets/img/img03.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="7">1896</h1>
+            </div>
+            <div class="container">
+              <div class="bg bg2"></div>
+              <div class="boxText" tabindex="8">
+                <h2 class="title">Final do Século XIX</h2>
+                <h3 class="subtitle">Dorsal Mesoatlântica</h3>
+                <p class="text prop-mt1">Um facto marcante sobre o oceano foi a descoberta da Dorsal Mesoatlântica, uma cadeia de montanhas submarinas que se estende ao longo do centro do Oceano Atlântico.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box reverse up">
+            <div class="container img"><img class="img" src="../../assets/img/img04.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="9">1915</h1>
+            </div>
+            <div class="container">
+              <div class="bg bg3"></div>
+              <div class="boxText" tabindex="10">
+                <h2 class="title">Início do Século XX</h2>
+                <h3 class="subtitle">Sonar</h3>
+                <p class="text prop-mt1">Um facto significativo sobre o oceano foi a introdução do sonar, uma tecnologia que revolucionou a exploração submarina.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box up">
+            <div class="container img"><img class="img" src="../../assets/img/img05.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="11">1960</h1>
+            </div>
+            <div class="container">
+              <div class="bg bg4"></div>
+              <div class="boxText" tabindex="12">
+                <h2 class="title">Metade do Século XX</h2>
+                <h3 class="subtitle">Batiscafo Trieste</h3>
+                <p class="text prop-mt1">Um evento marcante na exploração dos oceanos foi a descida do batiscafo Trieste à Fossa das Marianas, o ponto mais profundo dos oceanos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box reverse up">
+            <div class="container img"><img class="img" src="../../assets/img/img06.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="13">1977</h1>
+            </div>
+            <div class="container">
+              <div class="bg bg5"></div>
+              <div class="boxText" tabindex="14">
+                <h2 class="title">Década de 70</h2>
+                <h3 class="subtitle">Fontes hidrotermais</h3>
+                <p class="text prop-mt1">Um facto notável sobre o oceano foi a descoberta das fontes hidrotermais nas profundezas do Oceano Pacífico. Uma equipa de cientistas a bordo do submersível Alvin, operado pela Woods Hole Oceanographic Institution, explorou a Dorsal Mesoatlântica e encontrou estas fontes a uma profundidade de cerca de 2.500 metros.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box up">
+            <div class="container img"><img class="img" src="../../assets/img/img07.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="15">2000</h1>
+            </div>
+            <div class="container">
+              <div class="bg bg6"></div>
+              <div class="boxText" tabindex="16">
+                <h2 class="title">Início do Século XXI</h2>
+                <h3 class="subtitle">Projeto Argo</h3>
+                <p class="text prop-mt1">Um facto marcante sobre o oceano foi o lançamento do projeto Argo, uma rede global de flutuadores autónomos que monitorizam as condições dos oceanos em tempo real. Iniciado em 2000, o Projeto Argo consiste em milhares de flutuadores distribuídos pelos oceanos do mundo, que descem a profundidades de até 2.000 metros, recolhendo dados sobre temperatura, salinidade e correntes oceânicas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box reverse up">
+            <div class="container img"><img class="img" src="../../assets/img/img08b.png"/>
+            </div>
+            <div class="num">
+              <h1 tabindex="17">2020</h1>
+            </div>
+            <div class="container">
+              <div class="boxText" tabindex="18">
+                <h2 class="title">Anos Recentes</h2>
+                <h3 class="subtitle">Branqueamento dos Corais</h3>
+                <p class="text prop-mt1">Um facto significativo sobre o oceano foi a intensificação das pesquisas sobre o impacto das mudanças climáticas nos ecossistemas marinhos, particularmente o fenómeno do branqueamento dos corais.</p>
+              </div>
+            </div>
+          </div>
+          <div class="respiroBottom"></div>
+        </div>
+      </section>
+      <section class="sec05 color-bg-02">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full prop-pt3 prop-pb3" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <div class="container-btn">
+                <button class="botao button-type-next-page01 zoomIn util-margin-auto" tabindex="1" aria-label="" item="">
+                  <p class="text color-01" tabindex="2">Clique para seguir para o próximo tópico.</p>
+                  <div class="container-image"><img class="pulse" src="../../assets/img/arrow01.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</body>
+<script src="../../scripts/jquery.min.js"></script>
+<script src="../../scripts/jquery-ui.min.js"></script>
+<script src="../../scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="../../scripts/components.mixin.scripts.js"></script>
+<script src="../../scripts/page.js"></script>
+<script src="script.js"></script>

@@ -1,0 +1,327 @@
+extends ../../templates/page/page-base.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    body(prev-hide, next-hide)
+        .onePage.color-bg-05
+            section.sec01.full-H.shadowDonw
+                +image('detal.png', 'animaCircle')
+                +template-wildcard({
+                    bg: '',
+                    video: 'capa.mp4',
+                    class: '',
+                    columns:[
+                        {
+                            type: 'wide',
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'blend-video'
+                                },
+                            ]
+                        },
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt10 prop-pb10'
+                                },
+                                {
+                                    type: 'card',
+                                    resource: {
+                                        class: 'card-simple card-style-section prop-mt4',
+                                        content: [
+                                            {
+                                                type: 'bigtitle',
+                                                resource: {
+                                                    content: 'O Fundo do Mar',
+                                                    class: 'color-05 prop-txt-center prop-m0 text-capa'
+                                                }
+                                            },
+                                            {
+                                                type: 'subtitle',
+                                                resource: {
+                                                    content: 'O Mais Profundo dos Assuntos',
+                                                    class: 'color-white prop-txt-center prop-mt1'
+                                                }
+                                            },
+                                            {
+                                                type: 'guide',
+                                                resource: {
+                                                    class: 'guide-mouse',
+                                                    content: [
+
+                                                        {
+                                                            type: 'image',
+                                                            resource: {
+                                                                classContainer: 'prop-mt1 down infinite',
+                                                                src: 'mouse.png',
+                                                                class: '',
+                                                                alt: ''
+                                                            }
+                                                        },
+                                                    ]
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                })
+
+            section.sec02.color-bg-05.util-shadow-box-up
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6'
+                                },
+                                {
+                                    type: 'background',
+                                    resource: {
+                                        src: 'bg02.png',
+                                        class: '',
+                                        alt: ''
+                                    }
+                                },
+                                {
+                                    type: 'image',
+                                    resource: {
+                                        classContainer: '',
+                                        src: 'img22.png',
+                                        class: '',
+                                        alt: 'Luz solar penetrando na água azul do oceano.'
+                                    }
+                                },
+                            ]
+                        },
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt3 prop-pb3 prop-tablet-pt0 prop-tablet-pb6'
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Os Mistérios das Profundezas do Oceano',
+                                        class: 'color-01 prop-m0'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'As profundezas do oceano são um vasto e inexplorado território, albergando uma diversidade de vida marinha e fenómenos geológicos que continuam a intrigar cientistas e exploradores. Em áreas como a Fossa das Marianas, a mais profunda do planeta, a pressão é tão esmagadora que apenas os veículos submersíveis mais avançados conseguem atingir tais profundidades.',
+                                        class: 'color-01 prop-mt1'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Nessas regiões, a escuridão é total e a vida marinha adaptou-se a condições extremas, desenvolvendo características únicas e fascinantes. A exploração destas profundezas não só amplia o nosso conhecimento sobre a biodiversidade marinha, como também pode revelar novos recursos naturais e fornecer informações valiosas sobre a história geológica da Terra.',
+                                        class: 'color-01 prop-mt1'
+                                    }
+                                },
+
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: '<b>Então, não perca tempo e deslize para baixo para começar!</b>',
+                                        class: 'color-01 prop-mt1'
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                })
+
+            section.sec03.color-bg-08.animaTop
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt6 prop-pb6'
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Qual é a importância dos oceanos para o clima global?',
+                                        class: 'color-05 prop-txt-center prop-m0'
+                                    }
+                                },
+
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Os oceanos são responsáveis pela absorção de cerca de um quarto do dióxido de carbono emitido pelas atividades humanas, o que ajuda a mitigar os efeitos das alterações climáticas. A interação entre os oceanos e a atmosfera também influencia padrões climáticos, como o fenómeno El Niño, que pode causar variações significativas no clima global.',
+                                        class: 'color-white prop-txt-center prop-mt1'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Assim, a saúde e a estabilidade dos oceanos são fundamentais para manter o equilíbrio climático da Terra.',
+                                        class: 'color-white prop-txt-center prop-mt1'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Deslize para baixo e acompanhe os grandes marcos do clima global!',
+                                        class: 'color-white prop-txt-center prop-mt1'
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                })
+
+            section.sec04.color-bg-08.timeLine.animaTop
+                .flex
+                    .respiroTop
+                    .line
+
+                    .box.reverse.up
+                        .container.img
+                            +image('img02.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 1872
+                        .container
+                            .bg.bg1
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Século XIX
+                                h3.subtitle HMS Challenger
+                                p.text.prop-mt1 Uma das descobertas mais importantes sobre o oceano foi realizada pela expedição do navio HMS Challenger, que navegou entre 1872 e 1876. Esta expedição é amplamente considerada a primeira verdadeira investigação científica dos oceanos e marcou o início da oceanografia moderna.
+
+                    .box.up
+                        .container.img
+                            +image('img03.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 1896
+                        .container
+                            .bg.bg2
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Final do Século XIX
+                                h3.subtitle Dorsal Mesoatlântica
+                                p.text.prop-mt1 Um facto marcante sobre o oceano foi a descoberta da Dorsal Mesoatlântica, uma cadeia de montanhas submarinas que se estende ao longo do centro do Oceano Atlântico.
+
+                    .box.reverse.up
+                        .container.img
+                            +image('img04.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 1915
+                        .container
+                            .bg.bg3
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Início do Século XX
+                                h3.subtitle Sonar
+                                p.text.prop-mt1 Um facto significativo sobre o oceano foi a introdução do sonar, uma tecnologia que revolucionou a exploração submarina.
+
+                    .box.up
+                        .container.img
+                            +image('img05.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 1960
+                        .container
+                            .bg.bg4
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Metade do Século XX
+                                h3.subtitle Batiscafo Trieste
+                                p.text.prop-mt1 Um evento marcante na exploração dos oceanos foi a descida do batiscafo Trieste à Fossa das Marianas, o ponto mais profundo dos oceanos.
+
+                    .box.reverse.up
+                        .container.img
+                            +image('img06.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 1977
+                        .container
+                            .bg.bg5
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Década de 70
+                                h3.subtitle Fontes hidrotermais
+                                p.text.prop-mt1 Um facto notável sobre o oceano foi a descoberta das fontes hidrotermais nas profundezas do Oceano Pacífico. Uma equipa de cientistas a bordo do submersível Alvin, operado pela Woods Hole Oceanographic Institution, explorou a Dorsal Mesoatlântica e encontrou estas fontes a uma profundidade de cerca de 2.500 metros.
+
+                    .box.up
+                        .container.img
+                            +image('img07.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 2000
+                        .container
+                            .bg.bg6
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Início do Século XXI
+                                h3.subtitle Projeto Argo
+                                p.text.prop-mt1 Um facto marcante sobre o oceano foi o lançamento do projeto Argo, uma rede global de flutuadores autónomos que monitorizam as condições dos oceanos em tempo real. Iniciado em 2000, o Projeto Argo consiste em milhares de flutuadores distribuídos pelos oceanos do mundo, que descem a profundidades de até 2.000 metros, recolhendo dados sobre temperatura, salinidade e correntes oceânicas.
+
+                    .box.reverse.up
+                        .container.img
+                            +image('img08b.png', 'img')
+                        .num
+                            h1(tabindex=acessib_count++) 2020
+                        .container
+                            .boxText(tabindex=acessib_count++)
+                                h2.title Anos Recentes
+                                h3.subtitle Branqueamento dos Corais
+                                p.text.prop-mt1 Um facto significativo sobre o oceano foi a intensificação das pesquisas sobre o impacto das mudanças climáticas nos ecossistemas marinhos, particularmente o fenómeno do branqueamento dos corais.
+
+                    .respiroBottom
+
+            section.sec05.color-bg-02
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt3 prop-pb3'
+                                },
+                                {
+                                    type: 'button',
+                                    resource: {
+                                        alt: '',
+                                        classContainer: '',
+                                        class: 'button-type-next-page01 zoomIn util-margin-auto',
+                                        attr:{
+                                            item: '',
+                                        },
+                                        content: [
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Clique para seguir para o próximo tópico.',
+                                                    class: 'color-01'
+                                                }
+                                            },
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'arrow01.png',
+                                                    class: 'pulse',
+                                                    alt: ''
+                                                }
+                                            },
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                    ]
+                })
+
+block scripts
+  script(src="script.js")

@@ -1,0 +1,91 @@
+.full-H{
+    .container-template-timeline{
+        min-height: 100vh;
+        display: flex;
+        position: relative;
+        background-size: cover;
+        .col {
+            .wrapper {
+                @media (max-width: @tablet) {
+                    margin: 0 0 2rem;
+                }
+            }
+        }
+    }
+}
+
+.container-template-timeline {
+    background-size: cover;
+    .cont-itens {
+        height: 25rem;
+        @media (max-width: @tablet) {
+            margin-top: 2rem;
+            height: auto !important;
+        }
+        .cont-item {
+            @media (max-width: @tablet) {
+                height: 15rem;
+            }
+
+            &.top_card {
+                .container-text {
+                    @media (max-width: @tablet) {
+                        padding: 1rem 0 1rem 2rem;
+                    }
+                }
+            }
+
+            &.down_card {
+                .container-text {
+                    @media (max-width: @tablet) {
+                        padding: 1rem 2rem 1rem 0;
+                    }
+                }
+            }
+
+            .container-text {
+                align-items: center !important;
+            }
+
+            .linha {
+                background-color:  @color-02 !important;
+                &::before {
+                    background-color: @color-02 !important;
+                    border: solid 0.25rem @color-02;
+                }
+            }
+
+            .cont-element {
+                padding: 2rem 0;
+            }
+
+            .container-image {
+                align-items: center !important;
+                img {
+                    height: 100%;
+                    max-height: 20rem;
+                    @media (max-width: @tablet) {
+                        height: 8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .vertical{
+        max-width: 60rem;
+        @media (max-width: @tablet) {
+            max-width: 100%;
+        }
+
+        img {
+            max-height: 10rem !important;
+            object-position: right;
+            padding: 1rem;
+        }
+
+        .wrapper-text{
+            padding: 1rem;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.container-slides {
+    margin: auto 2.5rem;
+    .slider {
+        padding: 0 0 1rem;
+        // Slider conteudo
+        .owl-stage-outer {
+            .owl-stage {
+                .owl-item {
+                    .owl-item-container {
+                        // Coluna unica
+                        .col-full {
+                            .wrapper {
+                                padding: 2rem !important;
+                                @media (max-width: @tablet) {
+                                // padding: 2rem;
+                                }
+                            }
+                        }
+                        // Coluna dupla
+                        .row-wrap {
+                            // padding: 2rem 7rem;
+                            @media (max-width: @tablet) {
+                                // padding: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Carousel conteudo
+        &.model-carousel {
+            // padding: 0 0.5rem 1rem;
+            .owl-stage-outer {
+                width: 100%;
+                .owl-stage {
+                    padding: 1rem 0;
+                    .owl-item {
+                        .owl-item-container {
+                            background-color: transparent !important;
+                            opacity: 1;
+                            .col {
+                                .wrapper {
+                                    overflow: hidden;
+                                    border-radius: 2.5rem;
+                                    background-color: @color-02;
+
+                                    .container-item-card {
+                                        margin: 0 !important;
+                                    }
+                                }
+                            }
+                        }
+                        &.center {
+                            .owl-item-container {
+                                opacity: 1;
+                                .col {
+                                    .wrapper {
+                                        box-shadow: 0.3em 0.3em 0.5em #0003;
+                                        background-color: @color-03;
+                                        // background-color: @color-02;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.component-carousel-type-image {
+                .owl-stage-outer {
+                    .owl-stage {
+                        .owl-item {
+                            .owl-item-container {
+                                .col {
+                                    .wrapper {
+                                        background-color: transparent;
+                                        padding: 0 !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .owl-nav {
+                @media (max-width: @tablet) {
+                    display: block;
+                }
+                .owl-prev {
+                    left: -2.5rem;
+                }
+                .owl-next {
+                    right: -2.5rem;
+                }
+                .owl-prev,
+                .owl-next {
+                    @media (max-width: @tablet) {
+                        display: block;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &.slide-model-bg {
+            .col-full {
+                overflow: hidden;
+                border-radius: 2rem;
+            }
+        }
+
+        // Setas de navegação
+        .owl-nav {
+            .owl-prev {
+                left: -2.5rem;
+            }
+            .owl-next {
+                right: -2.5rem;
+            }
+            .owl-prev,
+            .owl-next {
+                background-image: url(../../assets/img/arrow-slider01.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 2rem;
+                top: 0;
+                // background-color: @color-white;
+                @media (max-width: @tablet) {
+                    display: block;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .disabled {
+                opacity: 0.5;
+                img {
+                    opacity: 0.2;
+                }
+            }
+        }
+
+        // Bullets
+        .owl-dots {
+            margin: .5rem 0;
+            gap: 0.5rem;
+            display: flex;
+            justify-content: center;
+            .owl-dot {
+                span {
+                    margin: 0;
+                    background-color: #DE8A25;
+                }
+                &.active {
+                    span {
+                        background-color: #BF6901;
+                    }
+                }
+            }
+        }
+    }
+}

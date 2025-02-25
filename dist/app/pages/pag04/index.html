@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../styles/reset.css"/>
+  <link rel="stylesheet" type="text/css" href="../../styles/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="../../modules/flamboyant-props.min.css"/>
+</head>
+<body role="application">
+  <header>
+    <div class="headerTop"><img class="logo" src="../../assets/img/logo2.png"/>
+      <div class="boxFlex">
+        <button class="btnAcessibilidade acessibility_controll btn-Contrast"><img class="ico" src="../../assets/img/ico-acessibilidade.png"/>
+        </button>
+        <button class="btnHelp" data-modal="#help"><img class="ico" src="../../assets/img/ico-help.png"/>
+        </button>
+        <div class="component-template-header fixedHeader hamburguerAtivo" id="header"><label for="toggle">&#9776;</label>
+          <input type="checkbox" id="toggle"/>
+          <div class="container-menu-list">
+            <button class="btn1" id="pag01" onclick="navigate.goto('pag01')">O fundo do Mar</button>
+            <button class="btn2 block" id="pag02" onclick="navigate.goto('pag02')">Os Segredos Ocultos do Fundo do Mar</button>
+            <button class="btn3 block" id="pag03" onclick="navigate.goto('pag03')">Espécies Marinhas</button>
+            <button class="btn4 block" id="pag03" onclick="navigate.goto('pag04')">Referências</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-line">
+      <div class="progress-line-porcentagem"></div>
+    </div>
+  </header>
+  <div class="modal interaction-modal parent-inside-col modal modal-help" id="help">
+    <div class="flex-center">
+      <div class="box in delay1" aria-label="janela" aria-modal="aria-modal" role="dialog" tabindex="0">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full " alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h2 class="title color-05 prop-m0" tabindex="1">Tela de ajuda</h2>
+              <div class="container-list">
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help1.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="2">Aceder ao Menu</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help2.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="3">Aceder à Tela de Ajuda</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help3.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="4">Desça a Página</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help4.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="5">Aceder ao Menu de Acessibilidade</p>
+                </div>
+                <div class="container-item-card">
+                  <div class="container-image"><img src="../../assets/img/help6.png" alt="" aria-label="" tabindex="-1" aria-hidden="aria-hidden"/>
+                  </div>
+                  <p class="text prop-mt1 color-white" tabindex="6">Acompanhe seu Progresso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close" aria-label="Fechar modal." arrow_status_class=""></button>
+      </div>
+    </div>
+  </div>
+  <interection>
+    <div class="container-interaction-arrows bottom   ">
+      <button class="container-arrow container-arrow-left arrow-left" tabindex="1001" role="button" aria-label="Voltar para a tela anterior." title="Seta para esquerda."></button>
+      <button class="container-arrow container-arrow-right arrow-right" tabindex="1000" role="button" aria-label="Avançar para a próxima tela." title="Seta para direita."></button>
+    </div>
+  </interection>
+  <body prev-hide next-hide>
+    <div class="onePage color-bg-08">
+      <section class="sec03 color-bg-01">
+        <div class="container-template-wildcard">
+          <div class="col    col-one col-01  col-full prop-pt10 prop-pb10 prop-tablet-pt7 prop-tablet-pb7" alt="" aria-label="" tabindex="-1">
+            <div class="wrapper">
+              <h2 class="title color-05 prop-m0 prop-txt-center" tabindex="1">UNIVERSIDADE FERNANDO PESSOA</h2>
+              <h3 class="subtitle color-05 prop-m0 prop-txt-center" tabindex="2">FACULDADE DE CIÊNCIAS HUMANAS E SOCIAIS</h3>
+              <h3 class="subtitle color-white prop-mt1 prop-txt-center" tabindex="3">Pós-graduação em Educação Especial: Domínio Cognitivo e Motor</h3>
+              <p class="text color-white prop-mt2" tabindex="4"><b>Disciplina: </b> Acessibilidades e Tecnologias Específicas na Promoção da Inclusão</p>
+              <p class="text color-white" tabindex="5"><b>Professor: </b> Dr. Francisco Alves</p>
+              <p class="text color-white" tabindex="6"><b>Alunos:</b></p>
+              <p class="text color-white prop-p0 prop-m0" tabindex="7">Samuel Lemos Lana - 2024120716</p>
+              <p class="text color-white prop-p0 prop-m0" tabindex="8">Rui Filipe Duarte Geada – 2024120751</p>
+              <p class="text color-white" tabindex="9"><b>Turma:</b> 12ºA</p>
+              <p class="text color-white" tabindex="10"><b>Disciplina:</b> Apoio – Biologia e Geologia</p>
+              <h2 class="title color-05 prop-mt2 prop-txt-center" tabindex="11">Acessibilidade Web</h2>
+              <p class="text color-white" tabindex="12">A acessibilidade web é fundamental para garantir que todas as pessoas, independentemente das suas capacidades, possam navegar e interagir com um site de forma eficaz. Para isso, é essencial implementar diversas funcionalidades que melhorem a experiência dos utilizadores com dificuldades visuais, cognitivas ou motoras.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="13">Fontes apropriadas para Dislexia</h3>
+              <p class="text color-white" tabindex="14">O uso de fontes especialmente desenhadas para pessoas com dislexia ajuda a melhorar a legibilidade do conteúdo, reduzindo confusões entre letras semelhantes e promovendo uma leitura mais fluida.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="15">Descrição textual de imagens</h3>
+              <p class="text color-white" tabindex="16">A inclusão de descrições textuais (alt text) nas imagens permite que ferramentas de acessibilidade, como leitores de ecrã, forneçam informações precisas aos utilizadores com deficiência visual.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="17">Controle de Tabulação</h3>
+              <p class="text color-white" tabindex="18">A navegação por teclado é essencial para utilizadores que não usam um rato. Gerir a ordem de tabulação (tabindex) para garantir que os elementos seguem uma sequência lógica e intuitiva.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="19">Ajustes de espaçamento</h3>
+              <p class="text color-white" tabindex="20">Permitir que os utilizadores aumentem ou diminuam o espaçamento entre as letras, palavras e linhas melhora a leitura e a compreensão do texto, beneficiando principalmente pessoas com dificuldades cognitivas ou visuais.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="21">Inversão de cores e modo de tonalidade cinza</h3>
+              <p class="text color-white" tabindex="22">Opções como inversão de cores e escala de cinza são cruciais para pessoas com sensibilidade à luz ou daltonismo, garantindo uma melhor perceção dos elementos do site.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="23">Sublinhar links</h3>
+              <p class="text color-white" tabindex="24">A inclusão do sublinhado nos links torna-os mais visíveis e fáceis de identificar, especialmente para utilizadores com dificuldades visuais ou cognitivas.</p>
+              <h3 class="subtitle color-05 prop-mt2" tabindex="25">Aumento do cursor</h3>
+              <p class="text color-white" tabindex="26">Ampliar o tamanho do cursor facilita a navegação para utilizadores com dificuldades motoras, tornando a interação com os elementos do site mais acessível.</p>
+              <p class="text color-white" tabindex="27">Ao implementar estas funcionalidades, um site torna-se mais inclusivo e acessível para todos, garantindo uma melhor experiência de navegação e promovendo a igualdade digital.</p>
+              <h2 class="title color-05 prop-mt2 prop-txt-center" tabindex="28">Referência Bibliográfica</h2>
+              <p class="text color-white" tabindex="29">BOAVIDA J., PAULO D., GONÇALVES j. e SERRÃO E.; Deep Reefs, Mapeamento da Biodiversidade dos Habitats Marinhos de Profundidade – um projeto de cooperação pela biodiversidade. Relatório não técnico, Centro de Ciências do Mar, Universidade do Algarve, Faro, Portugal, 36 pp. Disponível em: <a href="https://oceanario.pt/wp-content/uploads/2024/05/relatorio_deep_reefs.pdf" target="_blank">https://oceanario.pt/wp-content/uploads/2024/05/relatorio_deep_reefs.pdf</a></p>
+              <p class="text color-white" tabindex="30">PENA R.; Influência dos Oceanos sobre o Clima Disponível em: <a href="https://mundoeducacao.uol.com.br/geografia/influencia-dos-oceanos-sobre-clima.htm" target="_blank"> https://mundoeducacao.uol.com.br/geografia/influencia-dos-oceanos-sobre-clima.htm</a></p>
+              <p class="text color-white" tabindex="31">Neto, A.I., Tittley, I., Raposeiro, P.M. (2005). "Flora marinha do litoral dos Açores = Rocky shore marine flora of the Azores". Secretaria Regional do Ambiente e do Mar, Horta: 156 p.. ISBN: 972-99884-0-4. Edição Bilingue (Inglês).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</body>
+<script src="../../scripts/jquery.min.js"></script>
+<script src="../../scripts/jquery-ui.min.js"></script>
+<script src="../../scripts/jquery.ui.touch-punch.min.js"></script>
+<script src="../../scripts/components.mixin.scripts.js"></script>
+<script src="../../scripts/page.js"></script>
+<script src="script.js"></script>

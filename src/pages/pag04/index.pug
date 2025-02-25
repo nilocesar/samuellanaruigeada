@@ -1,0 +1,246 @@
+extends ../../templates/page/page-base.pug
+
+block styles
+    link(rel="stylesheet", href="style.css")
+
+block body
+    body(prev-hide, next-hide)
+        .onePage.color-bg-08
+
+            section.sec03.color-bg-01
+                +template-wildcard({
+                    bg: '',
+                    class: '',
+                    columns:[
+                        {
+                            col:[
+                                {
+                                    type: 'class',
+                                    resource: 'prop-pt10 prop-pb10 prop-tablet-pt7 prop-tablet-pb7'
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'UNIVERSIDADE FERNANDO PESSOA',
+                                        class: 'color-05 prop-m0 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'FACULDADE DE CIÊNCIAS HUMANAS E SOCIAIS',
+                                        class: 'color-05 prop-m0 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Pós-graduação em Educação Especial: Domínio Cognitivo e Motor',
+                                        class: 'color-white prop-mt1 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: '<b>Disciplina: </b> Acessibilidades e Tecnologias Específicas na Promoção da Inclusão',
+                                        class: 'color-white prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: '<b>Professor: </b> Dr. Francisco Alves',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: '<b>Alunos:</b>',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Samuel Lemos Lana - 2024120716',
+                                        class: 'color-white prop-p0 prop-m0'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Rui Filipe Duarte Geada – 2024120751',
+                                        class: 'color-white prop-p0 prop-m0'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: '<b>Turma:</b> 12ºA',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: '<b>Disciplina:</b> Apoio – Biologia e Geologia',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Acessibilidade Web',
+                                        class: 'color-05 prop-mt2 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A acessibilidade web é fundamental para garantir que todas as pessoas, independentemente das suas capacidades, possam navegar e interagir com um site de forma eficaz. Para isso, é essencial implementar diversas funcionalidades que melhorem a experiência dos utilizadores com dificuldades visuais, cognitivas ou motoras.',
+                                        class: 'color-white'
+                                    }
+                                },
+
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Fontes apropriadas para Dislexia',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'O uso de fontes especialmente desenhadas para pessoas com dislexia ajuda a melhorar a legibilidade do conteúdo, reduzindo confusões entre letras semelhantes e promovendo uma leitura mais fluida.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Descrição textual de imagens',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A inclusão de descrições textuais (alt text) nas imagens permite que ferramentas de acessibilidade, como leitores de ecrã, forneçam informações precisas aos utilizadores com deficiência visual.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Controle de Tabulação',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A navegação por teclado é essencial para utilizadores que não usam um rato. Gerir a ordem de tabulação (tabindex) para garantir que os elementos seguem uma sequência lógica e intuitiva.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Ajustes de espaçamento',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Permitir que os utilizadores aumentem ou diminuam o espaçamento entre as letras, palavras e linhas melhora a leitura e a compreensão do texto, beneficiando principalmente pessoas com dificuldades cognitivas ou visuais.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Inversão de cores e modo de tonalidade cinza',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Opções como inversão de cores e escala de cinza são cruciais para pessoas com sensibilidade à luz ou daltonismo, garantindo uma melhor perceção dos elementos do site.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Sublinhar links',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'A inclusão do sublinhado nos links torna-os mais visíveis e fáceis de identificar, especialmente para utilizadores com dificuldades visuais ou cognitivas.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'subtitle',
+                                    resource: {
+                                        content: 'Aumento do cursor',
+                                        class: 'color-05 prop-mt2'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Ampliar o tamanho do cursor facilita a navegação para utilizadores com dificuldades motoras, tornando a interação com os elementos do site mais acessível.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Ao implementar estas funcionalidades, um site torna-se mais inclusivo e acessível para todos, garantindo uma melhor experiência de navegação e promovendo a igualdade digital.',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'title',
+                                    resource: {
+                                        content: 'Referência Bibliográfica',
+                                        class: 'color-05 prop-mt2 prop-txt-center'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'BOAVIDA J., PAULO D., GONÇALVES j. e SERRÃO E.; Deep Reefs, Mapeamento da Biodiversidade dos Habitats Marinhos de Profundidade – um projeto de cooperação pela biodiversidade. Relatório não técnico, Centro de Ciências do Mar, Universidade do Algarve, Faro, Portugal, 36 pp. Disponível em: <a href="https://oceanario.pt/wp-content/uploads/2024/05/relatorio_deep_reefs.pdf" target="_blank">https://oceanario.pt/wp-content/uploads/2024/05/relatorio_deep_reefs.pdf</a>',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'PENA R.; Influência dos Oceanos sobre o Clima Disponível em: <a href="https://mundoeducacao.uol.com.br/geografia/influencia-dos-oceanos-sobre-clima.htm" target="_blank"> https://mundoeducacao.uol.com.br/geografia/influencia-dos-oceanos-sobre-clima.htm</a>',
+                                        class: 'color-white'
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    resource: {
+                                        content: 'Neto, A.I., Tittley, I., Raposeiro, P.M. (2005). "Flora marinha do litoral dos Açores = Rocky shore marine flora of the Azores". Secretaria Regional do Ambiente e do Mar, Horta: 156 p.. ISBN: 972-99884-0-4. Edição Bilingue (Inglês).',
+                                        class: 'color-white'
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                })
+
+
+block scripts
+  script(src="script.js")

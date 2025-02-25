@@ -1,0 +1,36 @@
+.guide {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: .5rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 2rem;
+
+    .container-image {
+        width: 1.5rem;
+        height: 1.5rem;
+        &::before {
+            display: none;
+        }
+    }
+
+    .smalltext {
+        color: white;
+    }
+
+    &.guide-mouse {
+        margin: 0 auto;
+        .container-image {
+            width: 1.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    &.guide06 {
+        background-color: @color-06;
+    }
+
+    &.guide02 {
+        background-color: @color-02;
+    }
+}

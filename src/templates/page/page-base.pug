@@ -1,0 +1,230 @@
+include ../../../flamboyant_modules/templates/import.pug
+include mixins/index.pug
+
+doctype html
+html
+head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+
+    +linkStyles('reset.css')
+    +linkStyles('animate.min.css')
+    block styles
+    +linkModuleStyles('flamboyant-props.min.css')
+
+body(role="application")
+    header
+        .headerTop
+            +image('logo2.png', 'logo')
+            .boxFlex
+                button.btnAcessibilidade.acessibility_controll.btn-Contrast
+                    +image('ico-acessibilidade.png', 'ico')
+                button.btnHelp(data-modal="#help")
+                    +image('ico-help.png', 'ico')
+                +template-header({
+                    id: 'header',
+                    class: 'fixedHeader',
+                    hamburguer: true,
+                    data: [
+                        {
+                            type: 'menu-list',
+                            resource: [
+                                {
+                                    navPages: {
+                                        "id": 'pag01',
+                                        'link': "navigate.goto('pag01')",
+                                        'class': 'btn1',
+                                        'content': `O fundo do Mar`
+                                    }
+                                },
+                                {
+                                    navPages: {
+                                        "id": 'pag02',
+                                        'link': "navigate.goto('pag02')",
+                                        'class': 'btn2 block',
+                                        'content': `Os Segredos Ocultos do Fundo do Mar`
+                                    }
+                                },
+                                {
+                                    navPages: {
+                                        "id": 'pag03',
+                                        'link': "navigate.goto('pag03')",
+                                        'class': 'btn3 block',
+                                        'content': `Espécies Marinhas`
+                                    }
+                                },
+                                {
+                                    navPages: {
+                                        "id": 'pag03',
+                                        'link': "navigate.goto('pag04')",
+                                        'class': 'btn4 block',
+                                        'content': `Referências`
+                                    }
+                                },
+                            ]
+                        }
+                    ]
+                })
+        +interaction-progress-line({scroll:false})
+
+    +modal('help', 'modal modal-help', '')
+        +template-wildcard({
+            class: '',
+            columns:[
+                {
+                    col:[
+                        {
+                            type: 'class',
+                            resource: ''
+                        },
+                        {
+                            type: 'title',
+                            resource: {
+                                content: 'Tela de ajuda',
+                                class: 'color-05 prop-m0'
+                            }
+                        },
+                        {
+                            type: 'list',
+                            class: '',
+                            resource: [
+                                {
+                                    type: 'card',
+                                    resource: {
+                                        class: '',
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'help1.png',
+                                                    class: '',
+                                                    alt: ''
+                                                }
+                                            },
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Aceder ao Menu',
+                                                    class: 'prop-mt1 color-white'
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+                                {
+                                    type: 'card',
+                                    resource: {
+                                        class: '',
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'help2.png',
+                                                    class: '',
+                                                    alt: ''
+                                                }
+                                            },
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Aceder à Tela de Ajuda',
+                                                    class: 'prop-mt1 color-white'
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+                                {
+                                    type: 'card',
+                                    resource: {
+                                        class: '',
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'help3.png',
+                                                    class: '',
+                                                    alt: ''
+                                                }
+                                            },
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Desça a Página',
+                                                    class: 'prop-mt1 color-white'
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+                                {
+                                    type: 'card',
+                                    resource: {
+                                        class: '',
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'help4.png',
+                                                    class: '',
+                                                    alt: ''
+                                                }
+                                            },
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Aceder ao Menu de Acessibilidade',
+                                                    class: 'prop-mt1 color-white'
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+
+                                {
+                                    type: 'card',
+                                    resource: {
+                                        class: '',
+                                        content: [
+                                            {
+                                                type: 'image',
+                                                resource: {
+                                                    classContainer: '',
+                                                    src: 'help6.png',
+                                                    class: '',
+                                                    alt: ''
+                                                }
+                                            },
+                                            {
+                                                type: 'text',
+                                                resource: {
+                                                    content: 'Acompanhe seu Progresso',
+                                                    class: 'prop-mt1 color-white'
+                                                }
+                                            },
+                                        ]
+                                    }
+                                },
+                            ]
+                        },
+                    ]
+                },
+            ]
+        })
+
+    interection
+        +interaction-arrows({position: 'bottom'})
+
+    block body
+
++scriptScripts('jquery.min.js')
++scriptScripts('jquery-ui.min.js')
++scriptScripts('jquery.ui.touch-punch.min.js')
++scriptScripts('components.mixin.scripts.js')
++scriptScripts('page.js')
+block scripts

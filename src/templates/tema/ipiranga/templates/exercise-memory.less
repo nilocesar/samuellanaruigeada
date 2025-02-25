@@ -1,0 +1,32 @@
+.exercise-memory {
+    gap: 1rem;
+    .card {
+        min-height: 12rem;
+        overflow: auto;
+        @media (max-width: @tablet) {
+            width: calc(50% - 1rem);
+        }
+        .front {
+            background-color: @color-02;
+            padding: 1rem;
+            border-radius: 2rem;
+            // box-shadow: .2rem .2rem .5rem #0003;
+            .text {
+                color: @color-white;
+            }
+        }
+        .back {
+            // border: solid .2rem @color-black;
+            border-radius: 2rem;
+            background-color: @color-06;
+            padding: 1rem;
+            // box-shadow: .2rem .2rem .5rem #0003;
+            background-size: cover;
+            background-position: center;
+            .text {
+                text-align: center;
+                color: @color-07;
+            }
+        }
+    }
+}

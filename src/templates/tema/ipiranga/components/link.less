@@ -1,0 +1,30 @@
+.container-link {
+    a {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: .5rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 2rem;
+        .container-image {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+        .text {
+            color: white;
+            font-weight: 500;
+        }
+
+        &.link-type-simple {
+            padding: 0;
+        }
+        
+        &.link-type02 {
+            background-color: @color-02;
+            .text {
+                color: @color-07;
+            }
+        }
+    }
+}

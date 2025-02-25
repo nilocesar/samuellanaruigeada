@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'officina';
+    src: url('OfficinaSerifITCTTBook.woff2') format('woff2'),
+        url('OfficinaSerifITCTTBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'officina';
+  src: url('OfficinaSerifITCTTBold.woff2') format('woff2'),
+      url('OfficinaSerifITCTTBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'officina';
+  src: url('OfficinaSerifITCTTBookIta.woff2') format('woff2'),
+      url('OfficinaSerifITCTTBookIta.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'officina';
+    src: url('OfficinaSerifITCTTBoldIta.woff2') format('woff2'),
+        url('OfficinaSerifITCTTBoldIta.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}

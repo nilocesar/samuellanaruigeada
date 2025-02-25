@@ -1,0 +1,25 @@
+.container-audio {
+    display: flex;
+    justify-content: center;
+    audio {
+        height: 2.5rem;
+        // border-radius: 2rem;
+        background-color: @color-02;
+        // border: solid .2rem @color-02;
+        // padding: .2rem;
+        &::-webkit-media-controls-panel {
+            background-color: @color-02;
+            // filter: invert(100%);
+        }
+        &::-webkit-media-controls-play-button {
+            // background-color: #ff5f2e;
+            border-radius: 100%;
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+        &::-webkit-media-controls-current-time-display,
+        &::-webkit-media-controls-time-remaining-display {
+            font-weight: bold;
+        }
+    }
+}
